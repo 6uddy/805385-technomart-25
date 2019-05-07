@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Павел Власов](https://up.htmlacademy.ru/htmlcss/25/user/805385).
-* Наставник: `Неизвестно`.
+* Наставник: [Макс Кравченко](https://htmlacademy.ru/profile/dreamoctober).
 
 ---
 
