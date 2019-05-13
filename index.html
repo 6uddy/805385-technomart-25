@@ -25,26 +25,42 @@
     <h1>
       Интернет-магазин строительных материалов и инструментов для ремота
     </h1>
-    <p class="contacts">
-      +7 (812) 555-05-55<br>
-      г. Сантк-Петербург, ул. Б. Конюшенная, д. 19/8
-    </p>
-    <p class="user">
-      <a class="user-button" href="#">Войти</a>
-      <a class="user-button" href="#">Регистрация</a>
-    </p>
+    <a class="contacts-link" href="tel:+78125550555">+7 (812) 555-05-55</a>
+    <p class="contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+    <ul class="user">
+      <li class="user-controls-item">
+        <a class="user-button" href="#">Войти</a>
+      </li>
+      <li class="user-controls-item">
+        <a class="user-button" href="#">Регистрация</a>
+      </li>
+    </ul>
   </div>
 
   <div class="header-bottom">
     <nav class="main-navigation">
-      <ul>
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Компания</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a href="#">Спецпредложения</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Контакты</a></li>
+      <ul class="navigation-item">
+        <li>
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#">Компания</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#">Каталог</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#">Новости</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#">Спецпредложения</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#">Доставка</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#">Контакты</a>
+        </li>
       </ul>
     </nav>
   </div>
@@ -183,7 +199,7 @@
       <div class="service-slides">
         <div class="service-slide">
           <div class="description">
-            <h3>Доставка</h3>
+            <h3 class="service-slide-header">Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
               заработаем, поднимая его на ваш на этаж!</p>
           </div>
@@ -191,7 +207,7 @@
         </div>
         <div class="service-slide">
           <div class="info">
-            <h3>Гарантия</h3>
+            <h3 class="service-slide-header">Гарантия</h3>
             <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его
               возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж
               восстановите как-нибудь сами.</p>
@@ -200,7 +216,7 @@
         </div>
         <div class="service-slide">
           <div class="info">
-            <h3>Кредит</h3>
+            <h3 class="service-slide-header">Кредит</h3>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
             <a class="service-button" href="#">Отправить заявку</a>
           </div>
@@ -212,7 +228,7 @@
 
   <div class="information">
     <section class="about-company">
-      <h3>Компания «Техномарт»</h3>
+      <h3 class="information-header">Компания «Техномарт»</h3>
       <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
         равнодушными любителей сэкномить на гастарбайтерах.</p>
       <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными
@@ -225,7 +241,7 @@
       <a class="info-button" href="#">Подробнее о компании</a>
     </section>
     <section class="contacts">
-      <h3>Контакты</h3>
+      <h3 class="contacts-header">Контакты</h3>
       <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p>
       <img src="#" alt="Карта">
       <a class="info-button" href="#">Заблудились? Напишите нам!</a>
@@ -237,20 +253,38 @@
   <div class="footer-top">
     <img src="#" alt="Логотип Техномарт">
     <ul class="footer-menu">
-      <li><a href="#">Компания</a></li>
-      <li><a href="#">Новости</a></li>
-      <li><a href="#">Каталог</a></li>
-      <li><a href="#">Доставка</a></li>
-      <li><a href="#">Контакты</a></li>
+      <li>
+        <a href="#">Компания</a>
+      </li>
+      <li>
+        <a href="#">Новости</a>
+      </li>
+      <li>
+        <a href="#">Каталог</a>
+      </li>
+      <li>
+        <a href="#">Доставка</a>
+      </li>
+      <li>
+        <a href="#">Контакты</a>
+      </li>
     </ul>
     <div class="footer-contacts">
       г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55
     </div>
     <ul class="footer-menu">
-      <li><a href="#">Материалы</a></li>
-      <li><a href="#">Техника</a></li>
-      <li><a href="#">Инструмент</a></li>
-      <li><a href="#">Спецпредложения</a></li>
+      <li>
+        <a href="#">Материалы</a>
+      </li>
+      <li>
+        <a href="#">Техника</a>
+      </li>
+      <li>
+        <a href="#">Инструмент</a>
+      </li>
+      <li>
+        <a href="#">Спецпредложения</a>
+      </li>
     </ul>
   </div>
   <div class="footer-bottom">
@@ -259,9 +293,15 @@
     </p>
     <p class="footer-social">
     <ul>
-      <li><a class="social-button" href="#">Вконтакте</a></li>
-      <li><a class="social-button" href="#">Фейсбук</a></li>
-      <li><a class="social-button" href="#">Инстаграм</a></li>
+      <li>
+        <a class="social-button" href="#">Вконтакте</a>
+      </li>
+      <li>
+        <a class="social-button" href="#">Фейсбук</a>
+      </li>
+      <li>
+        <a class="social-button" href="#">Инстаграм</a>
+      </li>
     </ul>
     </p>
     <p class="footer-developers">
