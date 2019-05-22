@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
 <header class="main-header">
@@ -88,50 +90,73 @@
   <h2 class="page-header">Перфораторы</h2>
 
   <section class="filters">
-    <div class="filter-section">
-      <h3 class="filter-title">Цена:</h3>
-      <div class="range-filter">
-        <div class="range-controls">
-        </div>
-        <div class="price-controls">
-          <input class="min-price" type="text" value="0">
-          <span class="price-sep">—</span>
-          <input class="max-price" type="text" value="30000">
+    <form class="filter-form" method="get" action="http://echo.htmlacademy.ru/">
+      <div class="filter-section">
+        <h3 class="filter-title">Цена:</h3>
+        <div class="range-filter">
+          <div class="range-controls">
+          </div>
+          <div class="price-controls">
+            <input class="min-price" type="text" value="0">
+            <span class="price-sep">—</span>
+            <input class="max-price" type="text" value="30000">
+          </div>
         </div>
       </div>
-    </div>
-    <div class="filter-section">
-      <h3 class="filter-title">Производители:</h3>
-      <ul class="filter-list">
-        <li>
-          <span class="checkbox-label">Bosch</span>
-        </li>
-        <li>
-          <span class="checkbox-label">Интерскол</span>
-        </li>
-        <li>
-          <span class="checkbox-label">Makita</span>
-        </li>
-        <li>
-          <span class="checkbox-label">Dewalt</span>
-        </li>
-        <li>
-          <span class="checkbox-label">Hitachi</span>
-        </li>
-      </ul>
-    </div>
-    <div class="filter-section">
-      <h3 class="filter-title">Питание:</h3>
-      <ul class="filter-list">
-        <li>
-          <span class="radio-label">Аккумуляторные</span>
-        </li>
-        <li>
-          <span class="radio-label">Сетевые</span>
-        </li>
-      </ul>
-    </div>
-    <input class="button-filter" type="submit" value="Показать">
+      <div class="filter-section">
+        <h3 class="filter-title">Производители:</h3>
+        <ul class="filter-list">
+          <li>
+            <label class="manufacturers-checkbox">
+              <input type="checkbox" name="Bosch">
+              Bosch
+            </label>
+          </li>
+          <li>
+            <label class="manufacturers-checkbox">
+              <input type="checkbox" name="interskol">
+              Интерскол
+            </label>
+          </li>
+          <li>
+            <label class="manufacturers-checkbox">
+              <input type="checkbox" name="makita">
+              Makita
+            </label>
+          </li>
+          <li>
+            <label class="manufacturers-checkbox">
+              <input type="checkbox" name="dewalt">
+              Dewalt
+            </label>
+          </li>
+          <li>
+            <label class="manufacturers-checkbox">
+              <input type="checkbox" name="hitachi">
+              Hitachi
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="filter-section">
+        <h3 class="filter-title">Питание:</h3>
+        <ul class="filter-list">
+          <li>
+            <label class="power-supply-radio">
+              <input type="radio" name="work" value="battery" checked>
+              Аккумуляторные
+            </label>
+          </li>
+          <li>
+            <label class="power-supply-radio">
+              <input type="radio" name="work" value="network">
+              <span class="radio-indicator"></span>Сетевые
+            </label>
+          </li>
+        </ul>
+      </div>
+      <button type="submit" class="filter-button">Показать</button>
+    </form>
   </section>
 
   <section class="products">
@@ -344,6 +369,18 @@
     </p>
   </div>
 </footer>
+
+<div class="modal modal-dialog">
+  <h2 class="visually-hidden">Подтверждение заказа</h2>
+  <button type="button" class="modal-close">Закрыть</button>
+  <div class=" modal-container">
+    <p class="dialog-message">Товар добавлен в корзину!</p>
+  </div>
+  <div class="modal-controls">
+    <a class="btn" href="#">Оформить заказ</a>
+    <button class="btn btn-cancel">Продолжить покупки</button>
+  </div>
+</div>
 
 </body>
 </html>
