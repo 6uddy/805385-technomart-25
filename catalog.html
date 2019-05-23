@@ -107,34 +107,24 @@
         <h3 class="filter-title">Производители:</h3>
         <ul class="filter-list">
           <li>
-            <label class="manufacturers-checkbox">
-              <input type="checkbox" name="Bosch">
-              Bosch
-            </label>
+            <label for="manufacture-bosh">Bosch</label>
+            <input type="checkbox" id="manufacture-bosh" name="bosh">
           </li>
           <li>
-            <label class="manufacturers-checkbox">
-              <input type="checkbox" name="interskol">
-              Интерскол
-            </label>
+            <label for="manufacture-interskol">Интерскол</label>
+            <input type="checkbox" id="manufacture-interskol" name="interskol">
           </li>
           <li>
-            <label class="manufacturers-checkbox">
-              <input type="checkbox" name="makita">
-              Makita
-            </label>
+            <label for="manufacture-makita">Makita</label>
+            <input type="checkbox" id="manufacture-makita" name="makita">
           </li>
           <li>
-            <label class="manufacturers-checkbox">
-              <input type="checkbox" name="dewalt">
-              Dewalt
-            </label>
+            <label for="manufacture-dewalt">Dewalt</label>
+            <input type="checkbox" id="manufacture-dewalt" name="dewalt">
           </li>
           <li>
-            <label class="manufacturers-checkbox">
-              <input type="checkbox" name="hitachi">
-              Hitachi
-            </label>
+            <label for="manufacture-hitachi">Hitachi</label>
+            <input type="checkbox" id="manufacture-hitachi" name="hitachi">
           </li>
         </ul>
       </div>
@@ -142,16 +132,12 @@
         <h3 class="filter-title">Питание:</h3>
         <ul class="filter-list">
           <li>
-            <label class="power-supply-radio">
-              <input type="radio" name="work" value="battery" checked>
-              Аккумуляторные
-            </label>
+            <label class="power-supply-radio" for="power-supply">Аккумуляторные</label>
+            <input type="radio" id="power-supply" name="work" value="battery" checked>
           </li>
           <li>
-            <label class="power-supply-radio">
-              <input type="radio" name="work" value="network">
-              <span class="radio-indicator"></span>Сетевые
-            </label>
+            <label class="power-supply-radio" for="network">Сетевые</label>
+            <input type="radio" id="network"  name="work" value="network">
           </li>
         </ul>
       </div>
@@ -372,7 +358,9 @@
 
 <div class="modal modal-dialog">
   <h2 class="visually-hidden">Подтверждение заказа</h2>
-  <button type="button" class="modal-close">Закрыть</button>
+  <button type="button" class="modal-close">
+    <span class="visually-hidden">Закрыть модальное окно</span>
+  </button>
   <div class=" modal-container">
     <p class="dialog-message">Товар добавлен в корзину!</p>
   </div>

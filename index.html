@@ -343,16 +343,18 @@
 
 <div class="modal write-us-modal">
   <h2 class="visually-hidden">Напишите нам</h2>
-  <button type="button" class="modal-close">Закрыть</button>
+  <button type="button" class="modal-close">
+    <span class="visually-hidden">Закрыть модальное окно</span>
+  </button>
   <form class="form-write-us" method="post" action="http://echo.htmlacademy.ru/">
     <div class="form-container">
-      <p>
+      <p class="">
         <label for="write-us-name">Ваше имя:</label>
         <input type="text" name="name" id="write-us-name" placeholder="Представьтесь, пожалуйста">
       </p>
       <p>
         <label for="write-us-e-mail">Ваш e-mail:</label>
-        <input type="text" name="e-mail" id="write-us-e-mail" placeholder="Для отправки ответа">
+        <input type="email" name="e-mail" id="write-us-e-mail" placeholder="Для отправки ответа">
       </p>
       <p>
         <label for="write-us-text">Текст письма:</label>
@@ -360,14 +362,18 @@
       </p>
     </div>
     <div class="send-form">
-      <input class="button button-send" type="submit" value="Отправить" name="send" aria-label="Отправить">
+      <button class="button button-send" type="submit">
+        <span>Отправить</span>
+      </button>
     </div>
   </form>
 </div>
 <div class="modal modal-map">
   <div class="modal-map-container">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <button class="modal-close" type="button">Закрыть</button>
+    <button class="modal-close" type="button">
+      <span class="visually-hidden">Закрыть модальное окно</span>
+    </button>
     <img src="img/big-map.jpg" alt="Большая карта">
   </div>
 </div>
