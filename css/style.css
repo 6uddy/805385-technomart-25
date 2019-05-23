@@ -12,6 +12,39 @@
   clip-path: inset(100%);
 }
 
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans", sans-serif;
+
+  background-color: #ffffff;
+}
+
 .modal {
   display: none;
+}
+
+
+.main-header {
+  background-color: #f3f7f8;
+}
+
+.header-top {
+  background-color: #33445a;
+}
+
+.services {
+  background-color: #f4f8fa;
+}
+
+.footer-top {
+  background-color: #32425c;
+}
+
+.footer-bottom {
+  background-color: #293449;
 }
