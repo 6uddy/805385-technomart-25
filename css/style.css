@@ -1,3 +1,8 @@
+/*
+COMMON
+*/
+
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -12,7 +17,9 @@
   clip-path: inset(100%);
 }
 
-
+.modal {
+  display: none;
+}
 
 body {
   margin: 0;
@@ -24,12 +31,16 @@ body {
   background-color: #ffffff;
 }
 
-.modal {
-  display: none;
+a {
+  text-decoration: none;
 }
 
+/*
+HEADER
+*/
 
 .main-header {
+  font-family: "Cuprum", sans-serif;
   background-color: #f3f7f8;
 }
 
@@ -37,9 +48,131 @@ body {
   background-color: #33445a;
 }
 
+.main-header-logo {
+  display: block;
+  background-color: #ee3643;
+}
+
+.header-top {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.search-form input {
+  background: #32425c;
+  border: none;
+}
+
+.search-form input::placeholder {
+  color: #ffffff;
+}
+
+.bookmarks,
+.basket,
+.order {
+  color: #ffffff;
+}
+
+.header-middle h1 {
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+  font-style: italic;
+}
+
+.header-number {
+  width: 270px;
+  margin: 0;
+  padding: 0;
+  padding-top: 9px;
+  padding-bottom: 5px;
+  padding-left: 70px;
+  border: 3px solid #ffffff;
+}
+
+.contacts-link {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+}
+
+.contacts-address {
+  margin-top: 4px;
+  padding-left: 10px;
+  color: #32425c;
+}
+
+.user-controls a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.user-controls, .main-navigation {
+  list-style: none;
+}
+
+.main-navigation {
+  color: #ffffff;
+  background-color: #32425c;
+}
+
+.main-navigation a {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+/*
+MAIN
+*/
+
+.offers h3 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "Cuprum", sans-serif;
+  color: #12346c;
+}
+
+.offers a {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Cuprum", sans-serif;
+  color: #ffffff;
+}
+
+.offers .offer-materials {
+  background-color: #ffbf47;
+}
+
+.offers .offer-tools {
+  background-color: #3bbce3;
+}
+
+.offers .offer-equipment {
+  background-color: #dc91d8;
+}
+
+.offers .offer-discount {
+  background-color: #8ed78f;
+}
+
+.offers .offer-delivery {
+  background-color: #ffc047;
+}
+
+
 .services {
   background-color: #f4f8fa;
 }
+
+
+/*
+FOOTER
+*/
 
 .footer-top {
   background-color: #32425c;
