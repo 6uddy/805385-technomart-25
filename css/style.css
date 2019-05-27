@@ -23,9 +23,11 @@ COMMON
 body {
   margin: 0;
   padding: 0;
+  min-width: 960px;
   font-size: 13px;
   line-height: 24px;
   font-family: "PT Sans", sans-serif;
+  border:5px solid green;
 
   background-color: #ffffff;
 }
@@ -40,16 +42,28 @@ HEADER
 
 .main-header {
   font-family: "Cuprum", sans-serif;
-  background-color: #f3f7f8;
+  background-color: #33445a;
+  border:5px solid yellow;
+
 }
 
 .header-top {
-  background-color: #33445a;
+  border:5px solid red;
+}
+
+.header-top .container{
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 940px;
+  display: flex;
+  /*align-items: center;*/
+  border:5px solid blue;
 }
 
 .main-header-logo {
-  display: block;
+  width: 220px;
   background-color: #ee3643;
+  padding-left: 30px;
 }
 
 .header-top {
@@ -61,6 +75,8 @@ HEADER
 .search-form input {
   background: #32425c;
   border: none;
+  padding-left: 50px;
+  color: inherit;
 }
 
 .search-form input::placeholder {
@@ -312,7 +328,7 @@ MAIN
   list-style: none;
 }
 
-.filter-list label{
+.filter-list label {
   font-size: 14px;
   line-height: 18px;
   color: #000000;
