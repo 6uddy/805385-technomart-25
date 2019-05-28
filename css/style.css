@@ -53,7 +53,6 @@ HEADER
 }
 
 .container {
-  padding: 0 20px;
   margin: 0 auto;
   width: 940px;
   display: flex;
@@ -61,7 +60,10 @@ HEADER
 
 .main-header-logo {
   background-color: #ee3643;
-  padding: 14px 55px 10px;
+  padding-top: 14px;
+  padding-right: 55px;
+  padding-left: 55px;
+  padding-bottom: 10px;
 }
 
 .header-top {
