@@ -17,14 +17,11 @@
       </a>
       <form action="https://echo.htmlacademy.ru" method="get" class="header-search">
         <input class="header-search-input" type="search" name="search" placeholder="Поиск:">
-        <button type="button" name="button-search" class="button-search">
-          <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
-            <path
-              d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
-          </svg>
-        </button>
+
       </form>
-      <p class="controls">
+      <p class="controls" style="
+    margin-left: auto;
+">
         <a class="bookmarks" href="#">Закладки: 0</a>
         <a class="basket" href="#">Корзина: 0</a>
         <a class="order" href="#">Оформить заказ</a>
@@ -33,12 +30,18 @@
   </div>
 
   <div class="header-middle">
-    <div class="container">
+    <div class="header-middle-wrapper container" style="
+    align-items: center;
+">
       <h1>
         Интернет-магазин<br>строительных материалов<br>и инструментов для ремота
       </h1>
-      <a class="contacts-link" href="tel:+78125550555">+7 (812) 555-05-55</a>
-      <p class="contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <div class="contacts-header">
+        <p class="contacts-link">
+          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+        </p>
+        <p class="contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      </div>
       <ul class="user-controls">
         <li class="user-controls-item">
           <a class="user-button" href="#">Войти</a>
@@ -78,50 +81,54 @@
   </div>
 </header>
 
-<main>
+<main class="main-content">
   <section class="offers">
-    <div class="container">
-      <div class="offer-materials">
-        <h3>Материалы</h3>
-        <a class="offer-button" href="#">На любой вкус</a>
-        <img src="img/icon-1.svg" alt="Материалы">
+    <div class="offers-list container">
+      <div class="offers-first-row">
+        <div class="offer-materials offer-item">
+          <h3>Материалы</h3>
+          <a class="offer-button" href="#">На любой вкус</a>
+          <img src="img/icon-1.svg" alt="Материалы">
+        </div>
+        <div class="offer-tools offer-item">
+          <h3>Инструмент</h3>
+          <a class="offer-button" href="#">На все случаи</a>
+          <img src="img/icon-2.svg" alt="Инструмент">
+        </div>
+        <div class="offer-equipment offer-item">
+          <h3 class="title">Техника</h3>
+          <a class="offer-button" href="#">Для стройки</a>
+          <img src="img/icon-3.svg" alt="Техника">
+        </div>
       </div>
-      <div class="offer-tools">
-        <h3>Инструмент</h3>
-        <a class="offer-button" href="#">На все случаи</a>
-        <img src="img/icon-2.svg" alt="Инструмент">
-      </div>
-      <div class="offer-equipment">
-        <h3 class="title">Техника</h3>
-        <a class="offer-button" href="#">Для стройки</a>
-        <img src="img/icon-3.svg" alt="Техника">
-      </div>
-      <div class="offer-slider">
-        <div class="slides">
+      <div class="offers-second-row">
+        <div class="offer-slider">
           <div class="offer-slide">
             <span class="slide-title">Перфораторы</span>
             <span class="slide-text">Настоящие мужские игрушки</span>
             <img src="img/offer-slide-1.jpg" alt="Перфораторы">
           </div>
-          <div class="offer-slide">
+          <div class="offer-slide visually-hidden">
             <span class="slide-title">Дрели</span>
             <span class="slide-text">Соседям на радость!</span>
             <img src="img/offer-slide-2.jpg" alt="Дрели">
           </div>
+          <button class="slider-button previous-slide visually-hidden"></button>
+          <button class="slider-button next-slide visually-hidden"></button>
+          <a class="slider-catalog " href="#">Открыть каталог</a>
         </div>
-        <button class="slider-button previous-slide"></button>
-        <button class="slider-button next-slide"></button>
-        <a class="slider-catalog" href="#">Открыть каталог</a>
-      </div>
-      <div class="offer-discount">
-        <h3>Скидки 50%</h3>
-        <a class="offer-button" href="#">На 350 товаров</a>
-        <img src="img/icon-4.svg" alt="Скидки">
-      </div>
-      <div class="offer-delivery">
-        <h3>Доставка</h3>
-        <a class="offer-button" href="#">>Бесплатно</a>
-        <img src="img/icon-5.svg" alt="Доставка">
+        <div class="offers-right-column">
+          <div class="offer-discount offer-item">
+            <h3>Скидки 50%</h3>
+            <a class="offer-button" href="#">На 350 товаров</a>
+            <img src="img/icon-4.svg" alt="Скидки">
+          </div>
+          <div class="offer-delivery offer-item">
+            <h3>Доставка</h3>
+            <a class="offer-button" href="#">Бесплатно</a>
+            <img src="img/icon-5.svg" alt="Доставка">
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -229,9 +236,9 @@
           покупки приятными.</p>
       </div>
       <div class="services-slider">
-        <input id="service-item-1" type="radio" checked><label for="service-item-1">Доставка</label></input>
-        <input id="service-item-2" type="radio"><label for="service-item-2">Гарантия</label></input>
-        <input id="service-item-3" type="radio"><label for="service-item-3">Кредит</label></input>
+        <input id="service-item-1" type="radio" checked=""><label for="service-item-1">Доставка</label>
+        <input id="service-item-2" type="radio"><label for="service-item-2">Гарантия</label>
+        <input id="service-item-3" type="radio"><label for="service-item-3">Кредит</label>
         <div class="service-slides">
           <div class="service-slide">
             <div class="description">
@@ -335,6 +342,7 @@
         © 2010–2016 Компания «Техномарт»<br>Все права защищены
       </p>
       <p class="footer-social">
+      </p>
       <ul class="footer-social-list">
         <li>
           <a class="social-button" href="#">
@@ -354,7 +362,7 @@
           </a>
         </li>
       </ul>
-      </p>
+      <p></p>
       <p class="footer-developers">
         <span>Разработано -</span>
         <a href="https://htmlacademy.ru">HTMLAcademy.ru</a>
@@ -403,6 +411,9 @@
     <img src="img/big-map.jpg" alt="Большая карта">
   </div>
 </div>
+
+
+
 
 </body>
 </html>

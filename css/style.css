@@ -16,6 +16,14 @@ COMMON
   clip-path: inset(100%);
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 .modal {
   display: none;
 }
@@ -40,7 +48,8 @@ HEADER
 
 .main-header {
   font-family: "Cuprum", sans-serif;
-
+  background-color: #f3f7f9;
+  padding-bottom: 63px;
 }
 
 .container {
@@ -73,6 +82,7 @@ HEADER
 .header-search input {
   background: #32425c;
   border: none;
+  width: 270px;
 }
 
 .bookmarks,
@@ -84,34 +94,62 @@ HEADER
 .header-middle {
   font-size: 17px;
   line-height: 18px;
-  background-color: #f3f7f9;
+  text-align: center;
 }
 
 .header-middle h1 {
-  padding: 5px 5px 10px;
+  width: 270px;
+  padding: 20px 20px 10px;
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
   font-style: italic;
+  text-align: left;
+}
+
+.contacts-header {
+  padding-top: 10px;
 }
 
 .contacts-link {
+  width: 300px;
+  padding: 10px 10px 10px;
+  margin-bottom: 5px;
+  border: 3px solid #ffffff;
+  text-align: center;
+}
+
+.contacts-link a {
   font-size: 21px;
-  line-height: 21px;
+  line-height: 18px;
+  font-family: "Cuprum", sans-serif;
   color: #ee3643;
 }
 
 .contacts-address {
-  margin-top: 4px;
   padding-left: 10px;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Cuprum", sans-serif;
   color: #32425c;
 }
 
+.header-bottom {
+  padding-bottom: 50px;
+}
+
 .user-controls {
+  /* width: 200px; */
   display: flex;
+  margin-left: auto;
+}
+
+user-controls li {
+  text-align: center
 }
 
 .user-controls a {
+  margin: 20px;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
@@ -123,23 +161,22 @@ HEADER
 }
 
 .main-navigation {
-  color: #ffffff;
-  background-color: #32425c;
-}
-
-.main-navigation {
   display: flex;
   margin: 0;
-  padding: 0 20px;
+  padding-left: 8px;
+  padding-right: 8px;
   list-style: none;
   color: #ffffff;
   background-color: #32425c;
 }
 
 .main-navigation a {
-  display: block;
+  display: flex;
   color: #ffffff;
-  padding: 15px 35px;
+  padding-top: 22px;
+  padding-right: 30px;
+  padding-bottom: 18px;
+  padding-left: 30px;
   font-size: 17px;
   line-height: 17px;
   font-family: "Cuprum", sans-serif;
@@ -148,6 +185,40 @@ HEADER
 /*
 MAIN
 */
+
+.main-content {
+  margin-top: 100px;
+}
+
+.offers-list {
+  flex-wrap: wrap;
+}
+
+.offers-first-row {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.offers-second-row {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.offer-item {
+  width: 280px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.offers-right-column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.offer-slider {
+  width: 620px;
+}
 
 .offers h3 {
   font-weight: bold;
@@ -194,6 +265,27 @@ MAIN
   font-family: "Cuprum", sans-serif;
   color: #32425c;
   text-transform: uppercase;
+}
+
+.popular-products {
+  margin-bottom: 20px;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 25px 26px;
+  background-color: #f9f5f0;
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .product-title {
@@ -256,10 +348,12 @@ MAIN
 }
 
 .offers .offer-discount {
+  margin-right: 0px;
   background-color: #8ed78f;
 }
 
 .offers .offer-delivery {
+  margin-right: 0px;
   background-color: #ffc047;
 }
 
