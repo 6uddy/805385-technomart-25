@@ -87,28 +87,29 @@ HEADER
   width: 270px;
 }
 
+.controls{
+  width: 100%;
+}
+
 .bookmarks,
 .basket,
 .order {
+  padding: 16px 19px;
   color: #ffffff;
 }
 
 .bookmarks {
   text-align: center;
-  width: 160px;
   padding-left: 40px;
 }
 
 .basket {
   text-align: center;
-  width: 160px;
   padding-left: 40px;
 }
 
 .order {
   text-align: center;
-  width: 160px;
-  padding-left: 40px;
   background-color: #63a63e;
 }
 
