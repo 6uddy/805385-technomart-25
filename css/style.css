@@ -93,6 +93,25 @@ HEADER
   color: #ffffff;
 }
 
+.bookmarks {
+  text-align: center;
+  width: 160px;
+  padding-left: 40px;
+}
+
+.basket {
+  text-align: center;
+  width: 160px;
+  padding-left: 40px;
+}
+
+.order {
+  text-align: center;
+  width: 160px;
+  padding-left: 40px;
+  background-color: #63a63e;
+}
+
 .header-middle {
   font-size: 17px;
   line-height: 18px;
