@@ -178,11 +178,11 @@ user-controls li {
   background-color: #ffffff;
 }
 
-.user-controls, .main-navigation {
+.user-controls, .main-navigation-list {
   list-style: none;
 }
 
-.main-navigation {
+.main-navigation-list {
   display: flex;
   margin: 0;
   padding-left: 8px;
@@ -192,7 +192,7 @@ user-controls li {
   background-color: #32425c;
 }
 
-.main-navigation a {
+.main-navigation-list a {
   display: flex;
   color: #ffffff;
   padding-top: 22px;
