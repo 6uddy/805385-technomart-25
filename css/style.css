@@ -73,7 +73,6 @@ HEADER
 }
 
 .header-search {
-  width: 270px;
   margin: 0;
   padding: 14px 50px 10px;
   background: #32425c;
@@ -84,7 +83,6 @@ HEADER
 .header-search input {
   background: #32425c;
   border: none;
-  width: 270px;
 }
 
 .controls{
@@ -94,22 +92,24 @@ HEADER
 .bookmarks,
 .basket,
 .order {
-  padding: 16px 19px;
   color: #ffffff;
 }
 
 .bookmarks {
   text-align: center;
+  padding: 16px 19px;
   padding-left: 40px;
 }
 
 .basket {
   text-align: center;
+  padding: 16px 19px;
   padding-left: 40px;
 }
 
 .order {
   text-align: center;
+  padding: 17px 20px;
   background-color: #63a63e;
 }
 
