@@ -42,7 +42,7 @@
         </p>
         <p class="contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
-      <ul class="user-controls">
+      <ul class="user-controls-list">
         <li class="user-controls-item">
           <a class="user-button" href="#">Войти</a>
         </li>
@@ -54,7 +54,7 @@
   </div>
   <div class="header-bottom container">
     <nav class="main-navigation">
-      <ul class="main-navigation">
+      <ul class="main-navigation-list">
         <li>
           <a href="index.html">Главная</a>
         </li>
@@ -83,24 +83,24 @@
 
 <main class="main-content">
   <section class="offers">
-    <div class="offers-list container">
-      <div class="offers-first-row">
-        <div class="offer-materials offer-item">
+    <div class="offers-content container">
+      <ul class="offers-first-row">
+        <li class="offer-materials offer-item">
           <h3>Материалы</h3>
           <a class="offer-button" href="#">На любой вкус</a>
           <img src="img/icon-1.svg" alt="Материалы">
-        </div>
-        <div class="offer-tools offer-item">
+        </li>
+        <li class="offer-tools offer-item">
           <h3>Инструмент</h3>
           <a class="offer-button" href="#">На все случаи</a>
           <img src="img/icon-2.svg" alt="Инструмент">
-        </div>
-        <div class="offer-equipment offer-item">
+        </li>
+        <li class="offer-equipment offer-item">
           <h3 class="title">Техника</h3>
           <a class="offer-button" href="#">Для стройки</a>
           <img src="img/icon-3.svg" alt="Техника">
-        </div>
-      </div>
+        </li>
+      </ul>
       <div class="offers-second-row">
         <div class="offer-slider">
           <div class="offer-slide">
@@ -134,11 +134,11 @@
   </section>
 
   <section class="popular-products">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Популярные товары:</h2>
-        <a class="btn" href="#">Все пополурные товары</a>
-      </div>
+    <div class="section-header container">
+      <h2 class="section-title">Популярные товары:</h2>
+      <a class="btn" href="#">Все пополурные товары</a>
+    </div>
+    <div class="products container">
       <ul class="products-list">
         <li class="product-item">
           <div class="actions">
@@ -193,37 +193,53 @@
   </section>
 
   <section class="popular-manufacturers">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Популярные производители:</h2>
-        <a class="btn" href="#">Все производители</a>
-      </div>
-      <figure class="manufacturers">
-        <a href="#">
-          <img src="img/logo-bosch.png" alt="bosh">
-        </a>
-        <a href="#">
-          <img src="img/logo-makita.png" alt="makita">
-        </a>
-        <a href="#">
-          <img src="img/logo-dewalt.png" alt="dewalt">
-        </a>
-        <a href="#">
-          <img src="img/logo-interskol.png" alt="интерскол">
-        </a>
-        <a href="#">
-          <img src="img/logo-hitachi.png" alt="hitachi">
-        </a>
-        <a href="#">
-          <img src="img/logo-lg.png" alt="lg">
-        </a>
-        <a href="#">
-          <img src="img/logo-aeg.png" alt="aeg">
-        </a>
-        <a href="#">
-          <img src="img/logo-metabo.png" alt="metabo">
-        </a>
-      </figure>
+    <div class="section-header container">
+      <h2 class="section-title">Популярные производители:</h2>
+      <a class="btn" href="#">Все производители</a>
+    </div>
+    <div class="manufacturers container">
+      <ul class="manufacturers-list">
+        <li>
+          <a class="manufacturers-list-item" href="#">
+            <img src="img/logo-bosch.png" alt="bosh">
+          </a>
+        </li>
+        <li>
+          <a class="manufacturers-list-item" href="#">
+            <img src="img/logo-makita.png" alt="makita">
+          </a>
+        </li>
+        <li>
+          <a class="manufacturers-list-item" href="#">
+            <img src="img/logo-dewalt.png" alt="dewalt">
+          </a>
+        </li>
+        <li>
+          <a class="manufacturers-list-item" href="#">
+            <img src="img/logo-interskol.png" alt="интерскол">
+          </a>
+        </li>
+        <li>
+          <a class="manufacturers-list-item" href="#">
+            <img src="img/logo-hitachi.png" alt="hitachi">
+          </a>
+        </li>
+        <li>
+          <a class="manufacturers-list-item" href="#">
+            <img src="img/logo-lg.png" alt="lg">
+          </a>
+        </li>
+        <li>
+          <a class="manufacturers-list-item" href="#">
+            <img src="img/logo-aeg.png" alt="aeg">
+          </a>
+        </li>
+        <li>
+          <a class="manufacturers-list-item" href="#">
+            <img src="img/logo-metabo.png" alt="metabo">
+          </a>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -411,8 +427,6 @@
     <img src="img/big-map.jpg" alt="Большая карта">
   </div>
 </div>
-
-
 
 
 </body>
