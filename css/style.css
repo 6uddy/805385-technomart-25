@@ -49,7 +49,6 @@ HEADER
 .main-header {
   font-family: "Cuprum", sans-serif;
   background-color: #f3f7f9;
-  padding-bottom: 63px;
 }
 
 .container {
@@ -87,6 +86,7 @@ HEADER
 
 .controls{
   width: 100%;
+  margin-left: auto;
 }
 
 .bookmarks,
@@ -117,6 +117,10 @@ HEADER
   font-size: 17px;
   line-height: 18px;
   text-align: center;
+}
+
+.header-middle-wrapper {
+  align-items: center;
 }
 
 .header-middle h1 {
@@ -161,7 +165,6 @@ HEADER
 }
 
 .user-controls-list {
-  /* width: 200px; */
   display: flex;
   margin-left: auto;
 }
@@ -215,7 +218,7 @@ MAIN
 */
 
 .main-content {
-  margin-top: 100px;
+  margin-top: 20px;
 }
 
 
@@ -492,25 +495,55 @@ manufacturers-list li {
   color: #000000;
 }
 
+.about-company {
+  padding-right: 20px;
+}
+
+.about-company p {
+  margin: 0;
+  margin-bottom: 27px;
+  padding: 0;
+}
+.about-company p:last-of-type {
+  margin-bottom: 20px;
+}
+
+.information {
+ margin-bottom: 40px;
+}
+
 .information-header,
 .contacts-header {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0px;
   font-size: 30px;
   line-height: 30px;
   font-family: "Cuprum", sans-serif;
   text-transform: uppercase;
+  letter-spacing: -1px;
 }
 
 .partners-list {
-  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
 }
 
 .partners-list li {
+  position: relative;
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+  padding-left: 30px;
+  list-style: none;
   font-size: 18px;
   line-height: 20px;
   font-family: "Cuprum", sans-serif;
 }
 
-.info-button {
+.information-button {
+  padding: 10px 40px;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
@@ -518,13 +551,73 @@ manufacturers-list li {
   text-transform: uppercase;
 }
 
-.page-header {
-  font-size: 30px;
-  line-height: 30px;
-  font-family: "Cuprum", sans-serif;
-  color: #32425c;
+.button-map {
+  margin: 0;
+  padding: 0;
+}
+
+.contacts {
+  margin-left: 80px;
+}
+
+.contacts p {
+  margin-bottom: 30px;
+}
+
+.contacts img {
+  margin-bottom: 25px;
+}
+
+
+.contacts-button {
+  padding: 10px 45px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
   text-transform: uppercase;
 }
+
+
+
+/* CATALOG */
+
+.search-navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  padding: 0;
+  list-style: none;
+}
+
+.search-navigation-list li {
+  position: relative;
+  margin-right: 40px;
+  padding-top: 2px;
+}
+
+.current-catalog,
+.search-navigation-list li a {
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.search-navigation-list li::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: -25px;
+  width: 8px;
+  height: 12px;
+  background-image: url("../img/icon-right-small.svg");
+}
+
+.current-catalog::after {
+  display: none;
+}
+
 
 .filter-list {
   list-style: none;
@@ -545,12 +638,50 @@ manufacturers-list li {
   text-transform: uppercase;
 }
 
+.catalog-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #f4f7f9;
+}
+
+.catalog-name h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-family: "Cuprum", sans-serif;
+  color: #3d546e;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
 /*
 FOOTER
 */
 
+.footer-top {
+  background-color: #32425c;
+}
+
+.footer-logo {
+  background-color: #ee3643;
+  padding-top: 14px;
+  padding-right: 55px;
+  padding-left: 55px;
+  padding-bottom: 10px;
+}
+
 .footer-menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
   list-style: none;
+}
+
+.footer-menu li {
+  margin-right: 60px;
 }
 
 .footer-menu a {
@@ -574,7 +705,7 @@ FOOTER
   color: #ffffff;
 }
 
-.footer-social-list {
+.footer-social {
   list-style: none;
 }
 
@@ -584,10 +715,6 @@ FOOTER
   line-height: 18px;
   color: #ffda96;
   text-decoration: none;
-}
-
-.footer-top {
-  background-color: #32425c;
 }
 
 .footer-bottom {
