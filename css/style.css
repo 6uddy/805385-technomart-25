@@ -84,7 +84,7 @@ HEADER
   border: none;
 }
 
-.controls{
+.controls {
   width: 100%;
   margin-left: auto;
 }
@@ -221,7 +221,6 @@ MAIN
   margin-top: 20px;
 }
 
-
 .offers .offer-materials {
   background-color: #ffbf47;
 }
@@ -255,6 +254,7 @@ MAIN
   flex-wrap: wrap;
   display: flex;
 }
+
 .offers-first-row li.offer-item:last-child {
   margin-right: 0px;
 }
@@ -273,7 +273,6 @@ MAIN
   margin-left: 20px;
   margin-bottom: 20px;
 }
-
 
 .offer-item {
   width: 300px;
@@ -319,7 +318,6 @@ MAIN
   color: #ffffff;
 }
 
-
 /*SECTIONS*/
 
 .section-header a {
@@ -350,12 +348,11 @@ MAIN
   background-color: #f9f5f0;
 }
 
-
-.products {
+.products-pop {
   display: flex;
 }
 
-.products-list {
+.products-pop-list {
   display: flex;
   flex-wrap: wrap;
   align-self: stretch;
@@ -364,25 +361,26 @@ MAIN
   list-style: none;
 }
 
-.products-list li {
+.products-pop-list li {
   margin-right: 20px;
   margin-bottom: 20px;
 }
-.products-list li:nth-child(4n) {
+
+.products-pop-list li:nth-child(4n) {
   margin-right: 0;
 }
 
-.products-list img {
+.products-pop-list img {
   margin-bottom: 33px;
 }
 
-.product-item {
+.product-pop-item {
   width: 220px;
   text-align: center;
   border: 1px solid #eaeaea;
 }
 
-.product-item .product-title {
+.product-pop-item .product-title {
   margin: 0;
   padding: 0 15px;
   font-weight: bold;
@@ -392,36 +390,36 @@ MAIN
   letter-spacing: -1px;
 }
 
-.products-list {
+.product-pop-list {
   list-style: none;
 }
 
-.product-item .discount {
+.product-pop-item .discount {
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
   color: #a9a9a9;
 }
 
-.price {
+.product-pop-item .price {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
   background-color: #ee3643;
 }
 
-.product-item .actions a {
+.product-pop-item .actions a {
   font-size: 14px;
   line-height: 18px;
   font-family: "Cuprum", sans-serif;
   text-transform: uppercase;
 }
 
-.product-item .buy {
+.product-pop-item .buy {
   color: #ffffff;
 }
 
-.product-item .bookmark {
+.product-pop-item .bookmark {
   color: #33445a;
 }
 
@@ -441,11 +439,9 @@ MAIN
   list-style: none;
 }
 
-
 manufacturers-list li {
   margin-right: 17px;
 }
-
 
 .manufacturers-list-item {
   align-items: center;
@@ -461,7 +457,6 @@ manufacturers-list li {
 .manufacturers-list-item:nth-child(4n) {
   margin-right: 0;
 }
-
 
 .services {
   background-color: #f4f8fa;
@@ -504,12 +499,13 @@ manufacturers-list li {
   margin-bottom: 27px;
   padding: 0;
 }
+
 .about-company p:last-of-type {
   margin-bottom: 20px;
 }
 
 .information {
- margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .information-header,
@@ -568,7 +564,6 @@ manufacturers-list li {
   margin-bottom: 25px;
 }
 
-
 .contacts-button {
   padding: 10px 45px;
   font-size: 14px;
@@ -577,8 +572,6 @@ manufacturers-list li {
   background-color: #ee3643;
   text-transform: uppercase;
 }
-
-
 
 /* CATALOG */
 
@@ -619,7 +612,6 @@ manufacturers-list li {
 
 /*FILTERS*/
 
-
 .manufacture-filter {
   margin: 0;
   margin-bottom: 20px;
@@ -656,6 +648,85 @@ manufacturers-list li {
   background-color: #f4f7f9;
 }
 
+.sort-menu {
+  display: flex;
+}
+
+.products {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+}
+
+.products-list {
+  flex-wrap: wrap;
+  width: 700px;
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: stretch;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.products-list li {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.products-list img {
+  margin-bottom: 33px;
+}
+
+.products-list li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.product-item {
+  width: 220px;
+  text-align: center;
+  border: 1px solid #eaeaea;
+}
+
+.product-item .product-title {
+  margin: 0;
+  padding: 0 15px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  letter-spacing: -1px;
+}
+
+.product-item .discount {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  color: #a9a9a9;
+}
+
+.product-item .price {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.product-item .actions a {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Cuprum", sans-serif;
+  text-transform: uppercase;
+}
+
+.product-item .buy {
+  color: #ffffff;
+}
+
 .catalog-name h2 {
   font-size: 30px;
   line-height: 30px;
@@ -665,11 +736,7 @@ manufacturers-list li {
   letter-spacing: -1px;
 }
 
-
-
-
 /*ABOUT*/
-
 
 .few-words {
   padding-top: 60px;
@@ -680,7 +747,6 @@ manufacturers-list li {
 .few-words .container {
   display: block;
 }
-
 
 .few-words h2 {
   margin: 0;
@@ -699,31 +765,65 @@ manufacturers-list li {
 FOOTER
 */
 
-.footer-top {
+.footer-top,
+.footer-middle {
   background-color: #32425c;
 }
 
 .footer-logo {
+  text-align: center;
+  width: 220px;
   background-color: #ee3643;
   padding-top: 14px;
-  padding-right: 55px;
-  padding-left: 55px;
+  padding-right: 45px;
+  padding-left: 45px;
   padding-bottom: 10px;
 }
 
-.footer-menu {
+footer-top-wrapper {
   display: flex;
-  margin: 0;
-  padding: 0;
-  padding-top: 40px;
-  list-style: none;
+  flex-wrap: wrap;
 }
 
-.footer-menu li {
-  margin-right: 60px;
+.footer-menu {
+  width: 545px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  padding: 0;
+  list-style: none;
+
 }
 
 .footer-menu a {
+  margin-right: 60px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Cuprum", sans-serif;
+  color: #f4f8fa;
+}
+
+footer-menu li:last-child a {
+  margin-right: 0;
+}
+
+.footer-section-menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.footer-section-menu li {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 0px;
+  padding-bottom: 20px;
+}
+
+.footer-section-menu a {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   line-height: 24px;
   font-family: "Cuprum", sans-serif;
@@ -731,6 +831,10 @@ FOOTER
 }
 
 .footer-contacts {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 350px;
   font-size: 18px;
   line-height: 24px;
   font-family: "Cuprum", sans-serif;
@@ -746,6 +850,9 @@ FOOTER
 
 .footer-social {
   list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-feedback a,

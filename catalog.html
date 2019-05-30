@@ -99,17 +99,19 @@
   </div>
 
   <div class="catalog-name container">
-    <h2 class="">Перфораторы</h2>
+    <!--h1-->
+    <h2>Перфораторы</h2>
   </div>
 
+  <!--имя тега для контейнера-->
   <div class="container">
-    <section class="filters">
+    <aside class="filters">
       <div class="filters-header">
         <h2>Фильтр:</h2>
       </div>
       <form class="filter-form" method="get" action="http://echo.htmlacademy.ru/">
-        <div class="range-filter">
-          <h3 class="filter-title">Цена:</h3>
+        <fieldset class="range-filter">
+          <legend class="filter-title">Цена:</legend>
           <div class="range-controls">
           </div>
           <div class="price-controls">
@@ -117,9 +119,9 @@
             <span class="price-sep">—</span>
             <input class="max-price" type="text" value="30000">
           </div>
-        </div>
-        <div class="manufacture-filter">
-          <h3 class="filter-title">Производители:</h3>
+        </fieldset>
+        <fieldset class="manufacture-filter">
+          <legend class="filter-title">Производители:</legend>
           <ul class="filter-list">
             <li>
               <label for="manufacture-bosh">Bosch</label>
@@ -142,9 +144,9 @@
               <input type="checkbox" id="manufacture-hitachi" name="hitachi">
             </li>
           </ul>
-        </div>
-        <div class="filter-section">
-          <h3 class="filter-title">Питание:</h3>
+        </fieldset>
+        <fieldset class="filter-section">
+          <legend class="filter-title">Питание:</legend>
           <ul class="filter-list">
             <li>
               <label class="power-supply-radio" for="power-supply">Аккумуляторные</label>
@@ -155,10 +157,10 @@
               <input type="radio" id="network" name="work" value="network">
             </li>
           </ul>
-        </div>
+        </fieldset>
         <button type="submit" class="filter-button">Показать</button>
       </form>
-    </section>
+    </aside>
 
     <section class="products">
       <div class="sort-menu">
@@ -325,6 +327,12 @@
           <a href="#">Контакты</a>
         </li>
       </ul>
+    </div>
+  </div>
+  <div class="footer-middle">
+    <div class="container">
+      </ul>
+      <!--ссылка-->
       <div class="footer-contacts">
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55
       </div>
@@ -379,7 +387,6 @@
       </p>
     </div>
   </div>
-</footer>
 </footer>
 
 <div class="modal modal-dialog">
