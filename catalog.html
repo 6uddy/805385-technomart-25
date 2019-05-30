@@ -11,48 +11,51 @@
 <body>
 <header class="main-header">
   <div class="header-top">
-    <a class="main-header-logo">
-      <img src="img/logo-technomart.svg" alt="Логотип Техномарт">
-    </a>
-    <form action="https://echo.htmlacademy.ru" method="get" class="header-search">
-      <input class="header-search-input" type="search" name="search" placeholder="Поиск:">
-      <button type="button" name="button-search" class="button-search">
-        <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
-          <path
-            d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
-        </svg>
-      </button>
-    </form>
-    <p class="controls">
-      <a class="bookmarks" href="#">Закладки: 0</a>
-      <a class="basket" href="#">Корзина: 10</a>
-      <a class="order" href="#">Оформить заказ</a>
-    </p>
+    <div class="container">
+      <a class="main-header-logo">
+        <img src="img/logo-technomart.svg" alt="Логотип Техномарт">
+      </a>
+      <form action="https://echo.htmlacademy.ru" method="get" class="header-search">
+        <input class="header-search-input" type="search" name="search" placeholder="Поиск:">
+      </form>
+      <p class="controls">
+        <a class="bookmarks" href="#">Закладки: 0</a>
+        <a class="basket" href="#">Корзина: 0</a>
+        <a class="order" href="#">Оформить заказ</a>
+      </p>
+    </div>
   </div>
+
   <div class="header-middle">
-    <h1>
-      Интернет-магазин строительных материалов и инструментов для ремота
-    </h1>
-    <a class="contacts-link" href="tel:+78125550555">+7 (812) 555-05-55</a>
-    <p class="contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-    <ul class="user-controls-list">
-      <li class="user-controls-item">
-        <a class="account" href="#">Равшан Джамшутович</a>
-      </li>
-      <li class="user-controls-item">
-        <a class="user-logout" href="#">logout</a>
-      </li>
-      <li class="user-controls-item">
-        <a class="user-link" href="#">Мои заказы</a>
-      </li>
-      <li class="user-controls-item">
-        <a class="user-link" href="#">Личный кабинет</a>
-      </li>
-    </ul>
+    <div class="header-middle-wrapper container">
+      <h1>
+        Интернет-магазин строительных материалов и инструментов для ремота
+      </h1>
+      <div class="contacts-header">
+        <p class="contacts-link">
+          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+        </p>
+        <p class="contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      </div>
+      <ul class="user-controls-list">
+        <li class="user-controls-item">
+          <a class="account" href="#">Равшан Джамшутович</a>
+        </li>
+        <li class="user-controls-item">
+          <a class="user-logout" href="#">logout</a>
+        </li>
+        <li class="user-controls-item">
+          <a class="user-link" href="#">Мои заказы</a>
+        </li>
+        <li class="user-controls-item">
+          <a class="user-link" href="#">Личный кабинет</a>
+        </li>
+      </ul>
+    </div>
   </div>
-  <div class="header-bottom">
+  <div class="header-bottom container">
     <nav class="main-navigation">
-      <ul class="navigation-item">
+      <ul class="main-navigation-list">
         <li>
           <a href="index.html">Главная</a>
         </li>
@@ -79,23 +82,25 @@
   </div>
 </header>
 
-
 <main class="main-content">
-  <ul class="search-navigation">
-    <li class="search-navigation-item">
-      <a href="#">Root</a>
-    </li>
-    <li class="search-navigation-item">
-      <a href="#">Каталог</a>
-    </li>
-    <li class="search-navigation-item">
-      <a href="#">Инструмент</a>
-    </li>
-    <li class="search-navigation-item">
-      <span class="current-catalog">Перфораторы</span>
-    </li>
-  </ul>
-  <h2 class="page-header">Перфораторы</h2>
+  <div class="container">
+    <ul class="search-navigation-list">
+      <li class="search-navigation-item">
+        <img alt="Главная" src="img/icon-home.svg" width="15" height="12">
+      </li>
+      <li class="search-navigation-item">
+        <a href="#">Каталог</a>
+      </li>
+      <li class="search-navigation-item">
+        <a href="#">Инструмент</a>
+      </li>
+      <li class="current-catalog"> Перфораторы</li>
+    </ul>
+  </div>
+
+  <div class="catalog-name container">
+  <h2 class="">Перфораторы</h2>
+  </div>
 
   <section class="filters">
     <form class="filter-form" method="get" action="http://echo.htmlacademy.ru/">
