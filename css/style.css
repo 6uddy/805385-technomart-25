@@ -847,14 +847,12 @@ footer-top-wrapper {
   margin-right: 60px;
 }
 
-
-
 .footer-middle {
   padding-bottom: 55px;
   background-color: #32425c;
 }
 
-footer-middle-wrapper {
+.footer-middle-wrapper {
   display: flex;
   flex-wrap: wrap;
 }
