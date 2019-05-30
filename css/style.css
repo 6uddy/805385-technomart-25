@@ -608,7 +608,6 @@ manufacturers-list li {
   content: "";
   position: absolute;
   top: 7px;
-  right: -25px;
   width: 8px;
   height: 12px;
   background-image: url("../img/icon-right-small.svg");
@@ -618,15 +617,25 @@ manufacturers-list li {
   display: none;
 }
 
+/*FILTERS*/
+
+
+.manufacture-filter {
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: left;
+}
 
 .filter-list {
   list-style: none;
+  padding-left: 0px;
 }
 
 .filter-list label {
   font-size: 14px;
   line-height: 18px;
   color: #000000;
+  text-align: left;
   text-transform: uppercase;
 }
 
@@ -654,6 +663,36 @@ manufacturers-list li {
   color: #3d546e;
   text-transform: uppercase;
   letter-spacing: -1px;
+}
+
+
+
+
+/*ABOUT*/
+
+
+.few-words {
+  padding-top: 60px;
+  padding-bottom: 70px;
+  background-color: #f4f8fa;
+}
+
+.few-words .container {
+  display: block;
+}
+
+
+.few-words h2 {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-family: "Cuprum", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.few-words p {
+  margin: 0;
 }
 
 /*
