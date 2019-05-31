@@ -175,10 +175,6 @@ HEADER
   margin-left: auto;
 }
 
-user-controls li {
-  text-align: center
-}
-
 .user-controls-list a {
   margin: 20px;
   font-size: 21px;
@@ -211,10 +207,7 @@ user-controls li {
 .main-navigation-list a {
   display: flex;
   color: #ffffff;
-  padding-top: 22px;
-  padding-right: 30px;
-  padding-bottom: 18px;
-  padding-left: 30px;
+  padding: 22px 30px 18px;
   font-size: 17px;
   line-height: 17px;
   font-family: "Cuprum", sans-serif;
@@ -254,12 +247,12 @@ MAIN
 }
 
 .offers .offer-discount {
-  margin-right: 0px;
+  margin-right: 0;
   background-color: #8ed78f;
 }
 
 .offers .offer-delivery {
-  margin-right: 0px;
+  margin-right: 0;
   background-color: #ffc047;
 }
 
@@ -277,7 +270,7 @@ MAIN
 }
 
 .offers-first-row li.offer-item:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .offers-first-row .offer-item {
@@ -396,54 +389,186 @@ MAIN
   margin-bottom: 33px;
 }
 
+/*.product-pop-item {*/
+/*  width: 220px;*/
+/*  text-align: center;*/
+/*  border: 1px solid #eaeaea;*/
+/*}*/
+
+/*.product-pop-item .product-title {*/
+/*  margin: 0;*/
+/*  padding: 0 15px;*/
+/*  font-weight: bold;*/
+/*  font-size: 18px;*/
+/*  line-height: 20px;*/
+/*  color: #000000;*/
+/*  letter-spacing: -1px;*/
+/*}*/
+
+/*.product-pop-item .discount {*/
+/*  font-weight: bold;*/
+/*  font-size: 17px;*/
+/*  line-height: 18px;*/
+/*  color: #a9a9a9;*/
+/*}*/
+
+/*.product-pop-item .price {*/
+/*  font-size: 16px;*/
+/*  line-height: 18px;*/
+/*  color: #ffffff;*/
+/*  background-color: #ee3643;*/
+/*}*/
+
+/*.product-pop-item .actions a {*/
+/*  font-size: 14px;*/
+/*  line-height: 18px;*/
+/*  font-family: "Cuprum", sans-serif;*/
+/*  text-transform: uppercase;*/
+/*}*/
+
+/*.product-pop-item .buy {*/
+/*  color: #ffffff;*/
+/*}*/
+
+/*.product-pop-item .bookmark {*/
+/*  color: #33445a;*/
+/*}*/
+
+/**
+catalog
+ */
+
+
 .product-pop-item {
+  position: relative;
+  display: inline-block;
   width: 220px;
-  text-align: center;
-  border: 1px solid #eaeaea;
-}
+  margin-right: 20px;
+  margin-bottom: 20px;
 
-.product-pop-item .product-title {
-  margin: 0;
-  padding: 0 15px;
-  font-weight: bold;
-  font-size: 18px;
   line-height: 20px;
-  color: #000000;
-  letter-spacing: -1px;
-}
-
-.product-pop-list {
-  list-style: none;
-}
-
-.product-pop-item .discount {
   font-weight: bold;
-  font-size: 17px;
-  line-height: 18px;
-  color: #a9a9a9;
+  text-align: center;
+
+  border: 1px solid #ccc;
 }
 
-.product-pop-item .price {
+
+.product-pop-item {
   font-size: 16px;
-  line-height: 18px;
-  color: #ffffff;
-  background-color: #ee3643;
 }
 
-.product-pop-item .actions a {
+.product-pop-item .flag {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+
+  width: 60px;
+  height: 60px;
+
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.product-pop-item .actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 218px;
+  height: 88px;
+  padding: 40px 0;
+
+  background-color: rgba(255,255,255,0.9);
+  z-index: 10;
+}
+
+.product-pop-item .actions .buy,
+.product-pop-item .actions .bookmark {
+  display: block;
+  width: 129px;
+  margin: 0 auto 7px;
+  padding: 7px 0;
+
+  background-color: #63a63e;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
+  border-radius:3px;
+
+  color: white;
   font-size: 14px;
-  line-height: 18px;
+  font-weight: normal;
   font-family: "Cuprum", sans-serif;
+  line-height: 18px;
+  text-decoration: none;
   text-transform: uppercase;
 }
 
-.product-pop-item .buy {
-  color: #ffffff;
+.product-pop-item .actions .bookmark {
+  color: #32425c;
+  background: white;
+  border-bottom-color: #63a63e;
 }
 
-.product-pop-item .bookmark {
-  color: #33445a;
+.product-pop-item .actions {
+  display: none;
 }
+
+.product-pop-item:hover .actions {
+  display: block;
+}
+
+.product-pop-item .actions {
+  display: none;
+}
+
+.product-pop-item .image {
+  width: 218px;
+  height: 168px;
+}
+
+.product-pop-item .image img {
+  max-width: 100%;
+}
+
+.product-pop-item .product-title {
+  min-height: 40px;
+  padding: 0 25px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.product-pop-item .discount {
+  min-height: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+
+  color: #999;
+  text-decoration: line-through;
+}
+
+.product-pop-item .price {
+  position: relative;
+  width: 120px;
+  margin: 10px auto 20px;
+  padding: 10px 30px;
+  color: white;
+  background: #ee3643;
+  border-radius: 3px;
+}
+
+.product-pop-item .price:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border: 20px solid white;
+  border-left-color: #ee3643;
+}
+
 
 .popular-manufacturers a {
   font-size: 14px;
@@ -463,10 +588,6 @@ MAIN
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-manufacturers-list li {
-  margin-right: 17px;
 }
 
 .manufacturer-item {
@@ -533,8 +654,7 @@ manufacturers-list li {
 }
 
 .about-company p {
-  margin: 0;
-  margin-bottom: 27px;
+  margin: 0 0 27px;
   padding: 0;
 }
 
@@ -549,9 +669,8 @@ manufacturers-list li {
 
 .information-header,
 .contacts-header {
-  margin: 0;
-  margin-bottom: 30px;
-  padding: 0px;
+  margin: 0 0 30px;
+  padding: 0;
   font-size: 30px;
   line-height: 30px;
   font-family: "Cuprum", sans-serif;
@@ -560,17 +679,14 @@ manufacturers-list li {
 }
 
 .partners-list {
-  margin: 0;
   padding: 0;
-  margin-bottom: 35px;
+  margin: 0 0 35px;
 }
 
 .partners-list li {
   position: relative;
-  margin: 0;
-  margin-bottom: 16px;
-  padding: 0;
-  padding-left: 30px;
+  margin: 0 0 16px;
+  padding: 0 0 0 30px;
   list-style: none;
   font-size: 18px;
   line-height: 20px;
@@ -621,9 +737,7 @@ manufacturers-list li {
 .search-navigation-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  margin-top: 18px;
-  margin-bottom: 18px;
+  margin: 18px 0;
   padding: 0;
   list-style: none;
 }
@@ -661,14 +775,13 @@ manufacturers-list li {
 
 
 .manufacture-filter {
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
   text-align: left;
 }
 
 .filter-list {
   list-style: none;
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 .filter-list label {
@@ -802,8 +915,7 @@ manufacturers-list li {
 }
 
 .few-words h2 {
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 0 30px;
   font-size: 30px;
   font-family: "Cuprum", sans-serif;
   text-transform: uppercase;
@@ -833,14 +945,11 @@ FOOTER
   text-align: center;
   width: 220px;
   background-color: #ee3643;
-  padding-top: 14px;
-  padding-right: 45px;
-  padding-left: 45px;
-  padding-bottom: 10px;
+  padding: 14px 45px 10px;
   box-shadow: inset 0 -5px 0 0 #b52933;
 }
 
-footer-top-wrapper {
+.footer-top-wrapper {
   display: flex;
   flex-wrap: wrap;
 }
