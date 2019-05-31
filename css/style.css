@@ -55,7 +55,8 @@ HEADER
 
 .container {
   margin: 0 auto;
-  width: 940px;
+  width: 960px;
+  padding: 0 10px;
 }
 
 .main-header-logo {
