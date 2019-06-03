@@ -706,7 +706,8 @@ HEADER
 
 .product-pop-item {
   position: relative;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   width: 220px;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -744,11 +745,12 @@ HEADER
   top: 0;
   left: 0;
 
+  min-height: 170px;
   width: 218px;
   height: 88px;
   padding: 40px 0;
 
-  background-color: rgba(255, 255, 255, 0);
+  background-color: white;
   z-index: 10;
 }
 
@@ -771,6 +773,59 @@ HEADER
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.product-pop-item .actions .buy:hover,
+.product-pop-item .actions .buy:focus {
+  background-color: #5fbb2d;
+}
+
+.product-pop-item .actions .buy:active {
+  background-color: #518534;
+}
+
+.product-pop-item .actions .buy {
+  position: relative;
+}
+
+.product-pop-item .actions .buy::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  left: 12px;
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 50%;
+  left: 17px;
+  transform: translateY(-50%);
+  opacity: 0.3;
+}
+
+.product-pop-item .actions .buy:hover::before {
+  opacity: 1;
+}
+
+.product-pop-item .actions .bookmark {
+  margin-bottom: 50px;
+  padding-bottom: 4px;
+  color: #33445a;
+  border: 2px solid #63a63e;
+}
+
+.product-pop-item .actions .bookmark:hover,
+.product-pop-item .actions .bookmark:focus {
+  border-color: #33445a;
+}
+
+.product-pop-item .actions .bookmark:active {
+  opacity: 0.3;
+}
+
+.product-pop-item:hover,
+.product-pop-item:focus {
+  box-shadow: 0 10px 30px -10px #000000;
 }
 
 .product-pop-item .actions .bookmark {
@@ -1422,6 +1477,59 @@ HEADER
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.catalog-item .actions .buy:hover,
+.catalog-item .actions .buy:focus {
+  background-color: #5fbb2d;
+}
+
+.catalog-item .actions .buy:active {
+  background-color: #518534;
+}
+
+.catalog-item .actions .buy {
+  position: relative;
+}
+
+.catalog-item .actions .buy::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  left: 12px;
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 50%;
+  left: 17px;
+  transform: translateY(-50%);
+  opacity: 0.3;
+}
+
+.catalog-item .actions .buy:hover::before {
+  opacity: 1;
+}
+
+.catalog-item .actions .bookmark {
+  margin-bottom: 50px;
+  padding-bottom: 4px;
+  color: #33445a;
+  border: 2px solid #63a63e;
+}
+
+.catalog-item .actions .bookmark:hover,
+.catalog-item .actions .bookmark:focus {
+  border-color: #33445a;
+}
+
+.catalog-item .actions .bookmark:active {
+  opacity:1;
+}
+
+.catalog-item:hover,
+.catalog-item:focus {
+  box-shadow: 0 10px 30px -10px #000000;
 }
 
 .catalog-item .actions .bookmark {
