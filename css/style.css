@@ -793,10 +793,7 @@ HEADER
   content: "";
   width: 15px;
   height: 15px;
-  left: 12px;
-  background-image: url("../img/icon-cart.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  background: url("../img/icon-cart.svg") no-repeat 0 0;
   top: 50%;
   left: 17px;
   transform: translateY(-50%);
@@ -1113,6 +1110,10 @@ HEADER
 
 /*FILTERS*/
 
+.filters{
+  width: 220px;
+}
+
 .filter-list {
   list-style: none;
   padding-left: 0;
@@ -1126,17 +1127,61 @@ HEADER
   text-transform: uppercase;
 }
 
-.filter-title {
-  margin-bottom: 13px;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 30px;
-  text-transform: uppercase;
-}
-
 .catalog-main-section-wrapper {
   display: flex;
+  margin-bottom: 60px;
 }
+
+.filter-form {
+  margin-top: 13px;
+}
+
+.filters-header {
+  display: flex;
+  align-items: center;
+  min-height: 37px;
+  background-color: #f7f3ec;
+}
+
+.filters-header h2 {
+  margin: 0;
+  padding-left: 19px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.price-filter-wrapper .range-controls {
+  margin-bottom: 8px;
+  padding: 40px 20px;
+  background-color: #f7f3ec;
+}
+
+.price-filter-wrapper .min-price,
+.price-filter-wrapper .max-price {
+  width: 95px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  background-color: #f7f3ec;
+  border: none;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-filter-wrapper {
+  margin-bottom: 43px;
+}
+
+
 
 .filter-button {
   padding: 12px 38px;
@@ -1364,10 +1409,6 @@ HEADER
   width: 400px;
 }
 
-.catalog-sort .order-buttons {
-  width: 60px;
-}
-
 .types-of-sort .sort-by-type {
   margin-left: 70px;
 }
@@ -1376,23 +1417,87 @@ HEADER
   margin-left: 65px;
 }
 
+
+.catalog-sort .order-buttons {
+  width: 60px;
+}
+
+.types-of-sort a {
+  position: relative;
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}
+
+.types-of-sort a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  border: none;
+  border-top: 1px dotted #ee3643;
+}
+
+.types-of-sort a:hover,
+.types-of-sort a:focus {
+  color: #000000;
+}
+
+.types-of-sort a:active,
+.types-of-sort .active {
+  color: #ee3643;
+}
+
+.types-of-sort a:hover::after {
+  border-top-style: solid;
+}
+
+.types-of-sort a:active::after,
+.catalog-sort a.active::after {
+  border: none;
+}
+
+.catalog-sort .active:hover::after {
+  border-top: 1px solid #ee3643;
+}
+
+.catalog-sort .active:active::after {
+  border: none;
+}
+
 .order-buttons {
   margin: 0;
   padding: 0;
 }
 
-.catalog-items {
-  flex-wrap: wrap;
-  width: 700px;
+.order-buttons .sort-icon {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.order-buttons .active {
+  color: #ee3643;
+  fill: #ee3643;
+}
+
+.order-buttons a:last-child {
+  margin-left: 20px;
+}
+
+.pagination-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .catalog-items {
   display: flex;
   flex-wrap: wrap;
   align-self: stretch;
-  margin: 0;
   padding: 0;
   list-style: none;
+  margin: 0 0 30px;
 }
 
 .catalog-items li {
@@ -1497,10 +1602,7 @@ HEADER
   content: "";
   width: 15px;
   height: 15px;
-  left: 12px;
-  background-image: url("../img/icon-cart.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  background: url("../img/icon-cart.svg") no-repeat 0 0;
   top: 50%;
   left: 17px;
   transform: translateY(-50%);
@@ -1791,7 +1893,7 @@ HEADER
 .footer-bottom-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -1807,8 +1909,8 @@ HEADER
 .footer-social {
   list-style: none;
   display: flex;
-  margin: 0;
   padding: 0;
+  margin: 0 0 0 170px;
 }
 
 .social-button {
@@ -1831,11 +1933,20 @@ HEADER
 }
 
 .footer-feedback {
+  display: inline-block;
   width: 100px;
+}
+
+.footer-bottom-wrapper .footer-feedback {
+  margin-left: 120px;
 }
 
 .footer-developers {
   width: 100px;
+}
+
+.footer-bottom-wrapper .footer-developers {
+  margin-left: 80px;
 }
 
 .footer-feedback a,

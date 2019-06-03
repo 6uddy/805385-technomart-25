@@ -116,13 +116,15 @@
       </div>
       <form class="filter-form" method="get" action="http://echo.htmlacademy.ru/">
         <fieldset class="range-filter">
-          <legend class="filter-title">Цена:</legend>
-          <div class="range-controls">
-          </div>
-          <div class="price-controls">
-            <input class="min-price" type="text" value="0">
-            <span class="price-sep">—</span>
-            <input class="max-price" type="text" value="30000">
+          <legend>Цена:</legend>
+          <div class="price-filter-wrapper">
+            <div class="range-controls">
+            </div>
+            <div class="price-controls">
+              <input class="min-price" type="text" value="0">
+              <span class="price-sep">—</span>
+              <input class="max-price" type="text" value="90000">
+            </div>
           </div>
         </fieldset>
         <fieldset class="manufacture-filter">
@@ -179,17 +181,24 @@
         <p class="sorting-title">Сортировка:</p>
         <div class="catalog-sort">
           <div class="types-of-sort">
-            <a class="sort-by-price" href="#">по цене</a>
+            <a class="sort-by-price active" href="#">по цене</a>
             <a class="sort-by-type" href="#">по типу</a>
             <a class="sort-by-functionality" href="#">по функционалу</a>
           </div>
           <p class="order-buttons">
-            <a class="visually-hidden">по убыванию</a>
-            <a class="visually-hidden">по возрастанию</a>
+            <a class="active" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10">
+                <path class="sort-icon active" fill="#231F20" d="M5.5 0L0 10h11z"/>
+              </svg>
+            </a>
+            <a class="sorting-btn-2" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10">
+                <path class="sort-icon" fill="#231F20" d="M5.5 10L0 0h11"/>
+              </svg>
+            </a>
           </p>
         </div>
       </div>
-
       <ul class="catalog-items">
         <li class="catalog-item">
           <div class="actions">
