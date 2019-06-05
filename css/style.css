@@ -729,7 +729,7 @@ HEADER
 
   text-indent: -1000px;
   overflow: hidden;
-  z-index: 20;
+  z-index: 5;
 }
 
 .product-pop-item .flag-new {
@@ -1535,7 +1535,7 @@ HEADER
 
   text-indent: -1000px;
   overflow: hidden;
-  z-index: 20;
+  z-index: 5;
 }
 
 .catalog-item .flag-new {
@@ -1963,6 +1963,7 @@ HEADER
 }
 
 .modal {
+  display: none;
   position: relative;
   z-index: 10;
   background-color: #ffffff;
@@ -2162,8 +2163,4 @@ HEADER
   border: none;
   box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
   transform: translate(-50%, -50%);
-}
-
-.display-none {
-  display: none;
 }
