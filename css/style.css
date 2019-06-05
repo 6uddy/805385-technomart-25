@@ -26,9 +26,6 @@ html {
   box-sizing: inherit;
 }
 
-.modal {
-  display: none;
-}
 
 body {
   margin: 0;
@@ -1110,7 +1107,7 @@ HEADER
 
 /*FILTERS*/
 
-.filters{
+.filters {
   width: 220px;
 }
 
@@ -1180,7 +1177,6 @@ HEADER
 .price-filter-wrapper {
   margin-bottom: 43px;
 }
-
 
 
 .filter-button {
@@ -1626,7 +1622,7 @@ HEADER
 }
 
 .catalog-item .actions .bookmark:active {
-  opacity:1;
+  opacity: 1;
 }
 
 .catalog-item:hover,
@@ -1967,4 +1963,134 @@ HEADER
 .footer-developers a:active {
   color: #ee3643;
   border: none;
+}
+
+
+.modal {
+  display: none;
+  position: relative;
+  z-index: 10;
+  background-color: #ffffff;
+  border-top: 7px solid #ff5257;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 39px;
+  height: 39px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 6px;
+  width: 27px;
+  height: 4px;
+  background: #ff5357;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.write-us-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 620px;
+  min-height: 420px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
+  transform: translate(-50%, -50%);
+}
+
+.write-us-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 47px 80px 29px;
+}
+
+.write-us-item {
+  width: 220px;
+
+}
+
+.write-us-list .write-us-item:last-child {
+  width: 100%;
+}
+
+.write-us-list input:focus {
+  outline: none;
+}
+
+.write-us-item label {
+  display: block;
+  margin-bottom: 9px;
+  font: 18px/18px "Cuprum", "Arial", sans-serif;
+}
+
+.write-us-item input,
+.write-us-item textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 15px;
+  font: inherit;
+  line-height: 18px;
+  background-color: transparent;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+}
+
+.write-us-item input {
+  margin-bottom: 20px;
+}
+
+.write-us-item textarea {
+  height: 115px;
+}
+
+.write-us-item input::placeholder {
+  color: #a9a9a9;
+  opacity: 1;
+}
+
+.write-us-item textarea::placeholder {
+  color: #a9a9a9;
+  opacity: 1;
+}
+
+.write-us-item input:hover,
+.write-us-item textarea:hover {
+  border-color: #b5b5b5;
+}
+
+.write-us-item input:focus,
+.write-us-item textarea:focus {
+  border-color: #ee3643;
+}
+
+.write-us-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 37px 80px;
+  background-color: #f4f4f4;
+}
+
+.write-us-bottom button {
+  display: block;
+  flex-grow: 1;
 }

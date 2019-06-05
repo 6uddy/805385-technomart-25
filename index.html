@@ -415,41 +415,29 @@
 
 <div class="modal write-us-modal">
   <h2 class="visually-hidden">Напишите нам</h2>
-  <button type="button" class="modal-close">
-    <span class="visually-hidden">Закрыть модальное окно</span>
-  </button>
-  <form class="form-write-us" method="post" action="http://echo.htmlacademy.ru/">
-    <div class="form-container">
-      <p class="">
+  <form class="contacts-form" action="https://echo.htmlacademy.ru" method="post">
+    <ul class="write-us-list">
+      <li class="write-us-item">
         <label for="write-us-name">Ваше имя:</label>
-        <input type="text" name="name" id="write-us-name" placeholder="Представьтесь, пожалуйста">
-      </p>
-      <p>
-        <label for="write-us-e-mail">Ваш e-mail:</label>
-        <input type="email" name="e-mail" id="write-us-e-mail" placeholder="Для отправки ответа">
-      </p>
-      <p>
-        <label for="write-us-text">Текст письма:</label>
-        <textarea name="text" id="write-us-text" placeholder="В свободной форме"></textarea>
-      </p>
-    </div>
-    <div class="send-form">
-      <button class="button button-send" type="submit">
-        <span>Отправить</span>
-      </button>
+        <input id="write-us-name" type="text" name="name" placeholder="Имя Фамилия">
+      </li>
+      <li class="write-us-item">
+        <label for="write-us-email">Ваш e-mail:</label>
+        <input id="write-us-email" type="email" name="email" placeholder="email@example.com">
+      </li>
+      <li class="write-us-item">
+        <label for="write-us-message">Текст письма:</label>
+        <textarea id="write-us-message" name="message" placeholder="В свободной форме"></textarea>
+      </li>
+    </ul>
+    <div class="write-us-bottom">
+      <button class="btn" type="submit">Отправить</button>
     </div>
   </form>
+  <button class="modal-close" type="button">
+    <span class="visually-hidden">Закрыть</span>
+  </button>
 </div>
-<div class="modal modal-map">
-  <div class="modal-map-container">
-    <h2 class="visually-hidden">Как до нас добраться</h2>
-    <button class="modal-close" type="button">
-      <span class="visually-hidden">Закрыть модальное окно</span>
-    </button>
-    <img src="img/big-map.jpg" alt="Большая карта">
-  </div>
-</div>
-
 
 </body>
 </html>
