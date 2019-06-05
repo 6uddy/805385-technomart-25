@@ -26,7 +26,6 @@ html {
   box-sizing: inherit;
 }
 
-
 body {
   margin: 0;
   padding: 0;
@@ -1178,7 +1177,6 @@ HEADER
   margin-bottom: 43px;
 }
 
-
 .filter-button {
   padding: 12px 38px;
   text-transform: uppercase;
@@ -1412,7 +1410,6 @@ HEADER
 .types-of-sort .sort-by-functionality {
   margin-left: 65px;
 }
-
 
 .catalog-sort .order-buttons {
   width: 60px;
@@ -1965,7 +1962,6 @@ HEADER
   border: none;
 }
 
-
 .modal {
   display: none;
   position: relative;
@@ -2094,3 +2090,68 @@ HEADER
   display: block;
   flex-grow: 1;
 }
+
+.modal-basket {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 620px;
+  min-height: 275px;
+  box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
+  transform: translate(-50%, -50%);
+}
+
+.modal-basket-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 158px;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-basket-top {
+  vertical-align: middle;
+  padding: 35px 0 35px 180px;
+}
+
+.modal-basket-wrapper p {
+  position: relative;
+  line-height: 30px;
+  line-height: 30px;
+  font-size: 30px;
+  font-family: "Cuprum", "Arial", sans-serif;
+}
+
+.modal-basket-wrapper p::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -99px;
+  width: 66px;
+  height: 66px;
+  background: url("../img/icon-mark.svg") 0 0 no-repeat;
+}
+
+.modal-basket-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 37px 80px;
+  background-color: #f4f4f4;
+}
+
+.modal-basket-bottom .button {
+  flex-basis: 140px;
+}
+
+.modal-basket-bottom a:last-child {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.modal-basket-bottom a:last-child:hover,
+.modal-basket-bottom a:last-child:focus {
+  background-color: #dbd9d9;
+}
+
