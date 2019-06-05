@@ -1963,7 +1963,6 @@ HEADER
 }
 
 .modal {
-  display: none;
   position: relative;
   z-index: 10;
   background-color: #ffffff;
@@ -2118,7 +2117,6 @@ HEADER
 .modal-basket-wrapper p {
   position: relative;
   line-height: 30px;
-  line-height: 30px;
   font-size: 30px;
   font-family: "Cuprum", "Arial", sans-serif;
 }
@@ -2155,3 +2153,17 @@ HEADER
   background-color: #dbd9d9;
 }
 
+
+.modal-map {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: #ebf0f0;
+  border: none;
+  box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
+  transform: translate(-50%, -50%);
+}
+
+.display-none {
+  display: none;
+}
