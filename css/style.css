@@ -584,12 +584,36 @@ HEADER
   flex-direction: column;
 }
 
+.offers-right-column div:last-child {
+  margin-bottom: 0;
+}
+
 .offer-slider {
   width: 620px;
+  min-height: 265px;
+}
+
+.offer-slider {
+  background-color: #f3f7f9;
+}
+
+.offer-slide {
+  display: flex;
+  flex-direction: column;
+}
+
+.offer-slide--first {
+  min-height: 265px;
+  background-image: url("../img/offer-slide-1.jpg");
 }
 
 .offer-slide--second {
   display: none;
+  background-image: url("../img/offer-slide-2.jpg");
+}
+
+.offer-slider .btn {
+  width: 200px;
 }
 
 .offers h3 {
