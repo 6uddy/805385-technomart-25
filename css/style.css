@@ -514,24 +514,29 @@ HEADER
 
 .offers .offer-materials {
   background-color: #ffbf47;
+ background-image: url("../img/icon-1.svg");
 }
 
 .offers .offer-tools {
   background-color: #3bbce3;
+  background-image: url("../img/icon-2.svg");
 }
 
 .offers .offer-equipment {
   background-color: #dc91d8;
+  background-image: url("../img/icon-3.svg");
 }
 
 .offers .offer-discount {
   margin-right: 0;
   background-color: #8ed78f;
+  background-image: url("../img/icon-4.svg");
 }
 
 .offers .offer-delivery {
   margin-right: 0;
   background-color: #ffc047;
+  background-image: url("../img/icon-5.svg");
 }
 
 .offers-content {
@@ -551,8 +556,10 @@ HEADER
   margin-right: 0;
 }
 
-.offer-item {
+.offers .offer-item {
   width: 300px;
+  background-repeat: no-repeat;
+  background-position: 220px center;
 }
 
 .offers-first-row .offer-item {
@@ -581,6 +588,10 @@ HEADER
   width: 620px;
 }
 
+.offer-slide--second {
+  display: none;
+}
+
 .offers h3 {
   font-weight: bold;
   font-size: 24px;
@@ -588,6 +599,7 @@ HEADER
   font-family: "Cuprum", sans-serif;
   color: #ffffff;
   margin-left: 25px;
+  margin-bottom: 10px;
 }
 
 .offers a {
@@ -1991,7 +2003,6 @@ HEADER
 }
 
 .modal {
-  display: none;
   position: relative;
   z-index: 10;
   background-color: #ffffff;
@@ -2029,7 +2040,8 @@ HEADER
   transform: rotate(-45deg);
 }
 
-.write-us-modal {
+.modal-write-us {
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -2184,6 +2196,7 @@ HEADER
 
 
 .modal-map {
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -2191,4 +2204,8 @@ HEADER
   border: none;
   box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
   transform: translate(-50%, -50%);
+}
+
+.modal-show {
+  display: block;
 }
