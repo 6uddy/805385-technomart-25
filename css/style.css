@@ -551,6 +551,10 @@ HEADER
   margin-right: 0;
 }
 
+.offer-item {
+  width: 300px;
+}
+
 .offers-first-row .offer-item {
   margin-right: 20px;
   margin-bottom: 20px;
@@ -566,9 +570,6 @@ HEADER
   margin-bottom: 20px;
 }
 
-.offer-item {
-  width: 300px;
-}
 
 .offers-right-column {
   display: flex;
@@ -585,7 +586,8 @@ HEADER
   font-size: 24px;
   line-height: 30px;
   font-family: "Cuprum", sans-serif;
-  color: #12346c;
+  color: #ffffff;
+  margin-left: 25px;
 }
 
 .offers a {
@@ -593,6 +595,32 @@ HEADER
   line-height: 18px;
   font-family: "Cuprum", sans-serif;
   color: #ffffff;
+}
+
+.offer-button {
+  display: block;
+  width: 135px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  padding: 10px 0 10px 0;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 2px;
+  font-family: "Cuprum", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 200ms all;
+}
+
+.offer-button:hover,
+.offer-button:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.offer-button:active {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .slide-title {
