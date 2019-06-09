@@ -616,8 +616,7 @@ HEADER
   left: 25px;
   width: 22px;
   height: 40px;
-  background-color: transparent;
-  background-image: url("../img/icon-left.svg");
+  background: transparent url("../img/icon-left.svg");
   border: none;
   cursor: pointer;
 }
@@ -626,8 +625,7 @@ HEADER
   right: 25px;
   width: 22px;
   height: 40px;
-  background-color: transparent;
-  background-image: url("../img/icon-right.svg");
+  background: transparent url("../img/icon-right.svg");
   border: none;
   cursor: pointer;
 }
