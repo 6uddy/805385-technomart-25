@@ -249,43 +249,45 @@
     </div>
   </section>
 
-  <section class="services container visually-hidden">
-    <div class="services-header">
-      <h2 class="side-header">Сервисы</h2>
-      <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать
-        ваши
-        покупки приятными.</p>
-    </div>
-    <div class="services-slider">
-      <input id="service-item-1" type="radio" checked=""><label for="service-item-1">Доставка</label>
-      <input id="service-item-2" type="radio"><label for="service-item-2">Гарантия</label>
-      <input id="service-item-3" type="radio"><label for="service-item-3">Кредит</label>
-      <div class="service-slides">
-        <div class="service-slide">
-          <div class="description">
-            <h3 class="service-slide-header">Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-              заработаем, поднимая его на ваш на этаж!</p>
-          </div>
-          <img src="img/icon-delivery.png" alt="Доставка">
+
+  <section class="services">
+    <div class="container">
+      <h2 class="services-title">Сервисы</h2>
+      <p class="services-info">
+        Хороший интернет-магазин отличается от плохого не только ценами!<br/>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными. </p>
+      <input id="service-delivery" type="radio" name="service-toggle" checked/>
+      <input id="service-warranty" type="radio" name="service-toggle"/>
+      <input id="service-credit" type="radio" name="service-toggle"/>
+      <div class="service-content-wrapper">
+        <div class="right-part">
+          <ul class="services-list">
+            <li class="delivery-menu-item">
+              <label for="service-delivery">Доставка</label>
+            </li>
+            <li class="warranty-menu-item">
+              <label for="service-warranty">Гарантия</label>
+            </li>
+            <li class="credit-menu-item">
+              <label for="service-credit">Кредит</label>
+            </li>
+          </ul>
         </div>
-        <div class="service-slide">
-          <div class="info">
-            <h3 class="service-slide-header">Гарантия</h3>
-            <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его
-              возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом
-              уж
-              восстановите как-нибудь сами.</p>
+        <div class="left-part">
+          <div class="service-description">
+            <div class="delivery">
+              <h3>Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+            </div>
+            <div class="warranty">
+              <h3>Гарантия</h3>
+              <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+            </div>
+            <div class="credit">
+              <h3>Кредит</h3>
+              <p>Залезть в долговую яму стало проще! <br/> Кредитные консультанты придут вам на помощь.</p>
+              <a href="#" class="btn"> Отправить заявку </a>
+            </div>
           </div>
-          <img src="img/icon-warranty.png" alt="Гарантия">
-        </div>
-        <div class="service-slide">
-          <div class="info">
-            <h3 class="service-slide-header">Кредит</h3>
-            <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-            <a class="service-button" href="#">Отправить заявку</a>
-          </div>
-          <img src="img/icon-credit.png" alt="Кредит">
         </div>
       </div>
     </div>
