@@ -1083,37 +1083,174 @@ HEADER
   opacity: 0.5;
 }
 
+
+/*SERVICES*/
+
+
 .services {
-  display: flex;
+  margin-bottom: 82px;
+  padding-top: 63px;
+  padding-bottom: 100px;
+  overflow: hidden;
   background-color: #f4f8fa;
+  min-height: 550px;
 }
 
-.services-header h2 {
+.service-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.right-part {
+  flex-grow: 3.3;
+  flex-basis: 0;
+}
+
+.left-part {
+  flex-grow: 6.7;
+  flex-basis: 0;
+}
+
+
+.services-title {
+  margin: 0 0 30px;
   font-size: 30px;
-  line-height: 30px;
   font-family: "Cuprum", sans-serif;
+  color: #3d546e;
   text-transform: uppercase;
-  color: #000000;
+  letter-spacing: -1px;
 }
 
-.services-header p {
+.services-info {
+  margin: 0 0 62px;
   font-size: 13px;
   line-height: 24px;
+  font-family: "PTSans", sans-serif;
   color: #000000;
 }
 
-.service-slide h3 {
-  font-size: 30px;
-  line-height: 30px;
+.services input[type="radio"] {
+  display: none;
+}
+
+.services-list {
+  position: relative;
+  margin: 0;
+  padding: 8px 0 0;
+  list-style: none;
+}
+
+.services-list:after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 279px;
+  top: -35px;
+  left: 230px;
+  background: url("../img/line.png") no-repeat 0 0;
+  opacity: 0.25;
+}
+
+.services-list label {
+  display: block;
+
+}
+
+.services-list label:hover {
+  cursor: pointer;
+}
+
+.services-list li {
+  width: 240px;
+  padding-top: 12px;
+  padding-bottom: 19px;
+  padding-left: 23px;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 31px;
+  font-family: "Cuprum", sans-serif;
+  color: #ffffff;
+  background-color: #3d546e;
+  border-top: 1px solid #485973;
+  border-bottom: 1px solid #33445a;
+}
+
+.services-list li:hover {
+  background-color: #29384a;
+}
+
+#service-delivery:checked ~ .service-content-wrapper .delivery-menu-item,
+#service-warranty:checked ~ .service-content-wrapper .warranty-menu-item,
+#service-credit:checked ~ .service-content-wrapper .credit-menu-item {
+  color: #3d546e;
+  background-color: #ffffff;
+  border: none;
+}
+
+.service-description {
+  position: relative;
+}
+
+.service-description h3 {
+  margin: 11px 0 0;
+  font-size: 36px;
   font-family: "Cuprum", sans-serif;
   text-transform: uppercase;
-  color: #32425c;
+  letter-spacing: -1px;
+  color: #3d546e;
 }
 
-.service-slide p {
-  font-size: 13px;
-  line-height: 24px;
-  color: #000000;
+.service-description p {
+  position: relative;
+  z-index: 1;
+  margin: 31px 0 30px;
+  padding-right: 300px;
+}
+
+.service-description .delivery::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 0;
+  z-index: 0;
+  width: 468px;
+  height: 261px;
+  background: url("../img/icon-delivery.png") no-repeat;
+}
+
+.service-description .warranty::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 0;
+  z-index: 0;
+  width: 389px;
+  height: 283px;
+  background: url("../img/icon-warranty.png") no-repeat;
+}
+
+.service-description .credit::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 0;
+  z-index: 0;
+  width: 465px;
+  height: 265px;
+  background: url("../img/icon-credit.png") no-repeat;
+}
+
+.service-description .delivery,
+.service-description .warranty,
+.service-description .credit {
+  display: none;
+}
+
+#service-delivery:checked ~ .service-content-wrapper .delivery,
+#service-warranty:checked ~ .service-content-wrapper .warranty,
+#service-credit:checked ~ .service-content-wrapper .credit {
+  display: block;
 }
 
 .about-company {
