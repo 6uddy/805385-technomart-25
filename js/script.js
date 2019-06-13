@@ -47,3 +47,28 @@ if (modalMap) {
   });
 }
 
+
+
+var buyButtons = document.querySelectorAll('.buy');
+
+var modalBasket = document.querySelector('.modal-basket');
+
+if (modalBasket) {
+  var modalBasketClose = modalBasket.querySelector('.modal-close');
+
+  var addBuyClickHandler = function (buyButton) {
+    buyButton.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      modalShow(modalBasket);
+    });
+  };
+
+  for (var i = 0; i < buyButtons.length; i++) {
+    addBuyClickHandler(buyButtons[i]);
+  }
+
+  modalBasketClose.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    modalClose();
+  });
+}
