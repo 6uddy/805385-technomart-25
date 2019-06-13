@@ -2137,7 +2137,7 @@ HEADER
   padding: 40px 1px 1px;
   margin: 0 0 0 auto;
   list-style: none;
-
+  max-width: 630px;
 }
 
 .footer-menu a {
