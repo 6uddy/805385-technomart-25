@@ -734,7 +734,7 @@ HEADER
   width: 135px;
   margin-bottom: 22px;
   margin-left: 25px;
-  padding: 10px 0 10px 0;
+  padding: 10px 1px 10px 1px;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
@@ -778,6 +778,7 @@ HEADER
 
 .slider-button {
   position: absolute;
+  padding: 1px;
   top: 205px;
   left: 25px;
 }
@@ -1356,8 +1357,7 @@ HEADER
 
 .contacts-button {
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 1px;
 }
 
 /* CATALOG */
@@ -1752,6 +1752,7 @@ HEADER
 }
 
 .catalog-sort .order-buttons {
+  padding: 1px;
   width: 60px;
 }
 
@@ -1801,7 +1802,7 @@ HEADER
 
 .order-buttons {
   margin: 0;
-  padding: 0;
+  padding: 1px;
 }
 
 .order-buttons .sort-icon {
@@ -2044,6 +2045,7 @@ HEADER
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1px;
   min-width: 40px;
   min-height: 40px;
   color: #000000;
@@ -2132,10 +2134,10 @@ HEADER
 .footer-menu {
   display: flex;
   flex-wrap: wrap;
-  padding: 40px 0 0;
+  padding: 40px 1px 1px;
   margin: 0 0 0 auto;
   list-style: none;
-
+  max-width: 630px;
 }
 
 .footer-menu a {
@@ -2184,7 +2186,7 @@ HEADER
 }
 
 .footer-section-menu {
-  padding: 0;
+  padding: 1px;
   margin: 0 0 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -2246,6 +2248,7 @@ HEADER
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1px;
   width: 42px;
   height: 42px;
   background-color: #212a3a;
