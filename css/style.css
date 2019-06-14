@@ -1610,9 +1610,9 @@ HEADER
   letter-spacing: 1px;
 }
 
-.manufacture-checkbox input[type="checkbox"] {
-  display: none;
-}
+/*.manufacture-checkbox input[type="checkbox"] {*/
+/*  display: none;*/
+/*}*/
 
 .manufacture-checkbox input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
@@ -1664,9 +1664,9 @@ HEADER
   letter-spacing: 1px;
 }
 
-.power-supply-radio input[type="radio"] {
-  display: none;
-}
+/*.power-supply-radio input[type="radio"] {*/
+/*  display: none;*/
+/*}*/
 
 .power-supply-radio input[type="radio"] + .radio-indicator {
   position: absolute;
