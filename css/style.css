@@ -30,9 +30,7 @@ body {
   margin: 0;
   padding: 0;
   min-width: 960px;
-  font-size: 13px;
-  line-height: 24px;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font: 13px/24px "PT Sans", "Arial", sans-serif;
   background-color: #ffffff;
 }
 
@@ -581,7 +579,6 @@ HEADER
   background: url("../img/new-flag.png") no-repeat 0 0;
 }
 
-
 .offers-first-row .offer-item {
   margin-right: 20px;
   margin-bottom: 20px;
@@ -596,7 +593,6 @@ HEADER
   margin-left: 20px;
   margin-bottom: 20px;
 }
-
 
 .offers-right-column {
   display: flex;
@@ -614,11 +610,9 @@ HEADER
   min-height: 265px;
 }
 
-
 .offer-slider input[type=radio] {
   display: none;
 }
-
 
 .slider-control-btn {
   position: absolute;
@@ -637,7 +631,7 @@ HEADER
 }
 
 .slider-next-btn {
-  right: 25px;
+  right: 19px;
   width: 22px;
   height: 40px;
   background: transparent url("../img/icon-right.svg");
@@ -678,7 +672,6 @@ HEADER
   transform: translate(-620px);
 }
 
-
 .offer-slider {
   background-color: #f3f7f9;
 }
@@ -702,11 +695,9 @@ HEADER
 }
 
 #slider-btn-1:checked ~ .offers-first-slide,
-#slider-btn-2:checked ~ .offers-second-slide  {
+#slider-btn-2:checked ~ .offers-second-slide {
   display: block;
 }
-
-
 
 .offer-slider .btn {
   width: 200px;
@@ -718,8 +709,9 @@ HEADER
   line-height: 30px;
   font-family: "Cuprum", sans-serif;
   color: #ffffff;
-  margin-left: 25px;
-  margin-bottom: 10px;
+  margin-left: 24px;
+  margin-bottom: 13px;
+  margin-top: 22px;
 }
 
 .offers a {
@@ -757,11 +749,11 @@ HEADER
 
 .slide-title {
   position: absolute;
-  top: 30px;
+  top: 28px;
   left: 25px;
   font-weight: bold;
   font-size: 36px;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -770,9 +762,7 @@ HEADER
   position: absolute;
   top: 60px;
   left: 25px;
-  font-size: 18px;
-  line-height: 24px;
-  font-family: "PTSans", sans-serif;
+  font: 18px/24px "Cuprum", "Arial", sans-serif;
   color: #ffffff;
 }
 
@@ -785,26 +775,14 @@ HEADER
 
 /*SECTIONS*/
 
-.section-header a {
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "Cuprum", sans-serif;
-  color: #ffffff;
-  text-transform: uppercase;
-  background-color: #ee3643;
-}
-
 .section-header .btn {
   width: 250px;
 }
 
 .btn {
   display: inline-block;
-  padding: 11px 50px;
-  font: inherit;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "Cuprum", sans-serif;
+  padding: 10px 50px;
+  font: 14px/18px "Cuprum", "Arial", sans-serif;
   vertical-align: middle;
   text-align: center;
   color: #ffffff;
@@ -825,17 +803,10 @@ HEADER
 
 .section-header .section-title {
   margin: 0;
-  padding: 0;
-  font-size: 30px;
-  line-height: 30px;
-  font-family: "Cuprum", sans-serif;
+  padding: 5px;
+  font: 30px/30px "Cuprum", "Arial", sans-serif;
   color: #32425c;
   text-transform: uppercase;
-  letter-spacing: -1px;
-}
-
-.popular-products {
-  margin-bottom: 20px;
 }
 
 .section-header {
@@ -1021,23 +992,23 @@ HEADER
   min-height: 40px;
   padding: 0 25px;
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
+  font-size: 18px;
 }
 
 .product-pop-item .discount {
   min-height: 20px;
-  margin-top: 15px;
-  margin-bottom: 10px;
-
+  margin-top: 2px;
+  margin-bottom: 2px;
   color: #999;
   text-decoration: line-through;
 }
 
 .product-pop-item .price {
   position: relative;
-  width: 120px;
-  margin: 10px auto 20px;
-  padding: 10px 20px;
+  width: 140px;
+  margin: 7px 40px 20px 40px;
+  padding: 10px 24px;
   color: white;
   background: #ee3643;
   border-radius: 3px;
@@ -1052,6 +1023,10 @@ HEADER
   height: 0;
   border: 20px solid white;
   border-left-color: #ee3643;
+}
+
+.popular-manufacturers {
+  margin-bottom: 60px;
 }
 
 .popular-manufacturers a {
@@ -1103,17 +1078,15 @@ HEADER
   opacity: 0.5;
 }
 
-
 /*SERVICES*/
 
-
 .services {
-  margin-bottom: 82px;
-  padding-top: 63px;
+  margin-bottom: 68px;
+  padding-top: 67px;
   padding-bottom: 100px;
   overflow: hidden;
   background-color: #f4f8fa;
-  min-height: 550px;
+  min-height: 535px;
 }
 
 .service-content-wrapper {
@@ -1123,30 +1096,23 @@ HEADER
 }
 
 .right-part {
-  flex-grow: 3.3;
-  flex-basis: 0;
+  width: 300px;
 }
 
 .left-part {
-  flex-grow: 6.7;
-  flex-basis: 0;
+  width: 660px;
 }
 
-
 .services-title {
-  margin: 0 0 30px;
-  font-size: 30px;
-  font-family: "Cuprum", sans-serif;
-  color: #3d546e;
+  margin: 0 0 27px;
+  font: 30px/30px "Cuprum", "Arial", sans-serif;
   text-transform: uppercase;
-  letter-spacing: -1px;
+  color: black;
 }
 
 .services-info {
-  margin: 0 0 62px;
-  font-size: 13px;
-  line-height: 24px;
-  font-family: "PTSans", sans-serif;
+  margin: 0 0 64px;
+  font: 13px/24px "PT Sans", "Arial", sans-serif;
   color: #000000;
 }
 
@@ -1213,19 +1179,21 @@ HEADER
 }
 
 .service-description h3 {
-  margin: 11px 0 0;
+  margin-top: 10px;
+  margin-right: 0;
+  margin-left: 25px;
+  margin-bottom: 0px;
   font-size: 36px;
   font-family: "Cuprum", sans-serif;
   text-transform: uppercase;
-  letter-spacing: -1px;
   color: #3d546e;
 }
 
 .service-description p {
   position: relative;
   z-index: 1;
-  margin: 31px 0 30px;
-  padding-right: 300px;
+  margin: 31px 0 30px 25px;
+  padding-right: 245px
 }
 
 .service-description .delivery::before {
@@ -1261,6 +1229,12 @@ HEADER
   background: url("../img/icon-credit.png") no-repeat;
 }
 
+.left-part .credit .btn {
+  margin-left: 25px;
+  width: 155px;
+  padding: 10px 20px;
+}
+
 .service-description .delivery,
 .service-description .warranty,
 .service-description .credit {
@@ -1284,7 +1258,7 @@ HEADER
 
 .about-company p {
   margin: 0 0 27px;
-  padding: 0;
+  padding: 0 80px 0 0;
 }
 
 .about-company p:last-of-type {
@@ -1294,7 +1268,7 @@ HEADER
 .information {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 80px
+  margin-bottom: 88px;
 }
 
 .first-column {
@@ -1303,7 +1277,7 @@ HEADER
 
 .information-header,
 .contacts-information-header {
-  margin: 0 0 30px;
+  margin: 0 0 25px;
   padding: 0;
   font-size: 30px;
   line-height: 30px;
@@ -1493,7 +1467,6 @@ HEADER
 .range-thumb:last-of-type {
   right: 40px;
 }
-
 
 .price-filter-wrapper .min-price,
 .price-filter-wrapper .max-price {
@@ -2493,7 +2466,6 @@ HEADER
 .modal-basket-bottom a:last-child:focus {
   background-color: #dbd9d9;
 }
-
 
 .modal-map {
   display: none;
