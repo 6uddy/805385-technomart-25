@@ -1363,7 +1363,7 @@ HEADER
   content: "";
   position: absolute;
   top: 7px;
-  right: -25px;
+  right: -22px;
   width: 8px;
   height: 12px;
   background-image: url("../img/icon-right-small.svg");
@@ -1420,7 +1420,7 @@ HEADER
 
 .filters-header h2 {
   margin: 0;
-  padding-left: 19px;
+  padding-left: 16px;
   text-transform: uppercase;
   font-weight: normal;
   font-size: 13px;
@@ -1503,7 +1503,7 @@ HEADER
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   padding: 22px 28px;
   background-color: #f4f7f9;
 }
@@ -1572,7 +1572,7 @@ HEADER
 }
 
 .manufacture-filter li {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .manufacture-checkbox {
@@ -1626,7 +1626,7 @@ HEADER
 }
 
 .power-supply-filter li {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .power-supply-radio {
@@ -1968,23 +1968,23 @@ HEADER
   min-height: 40px;
   padding: 0 25px;
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
+  font-size: 18px;
 }
 
 .catalog-item .discount {
   min-height: 20px;
-  margin-top: 15px;
-  margin-bottom: 10px;
-
+  margin-top: 5px;
+  margin-bottom: 5px;
   color: #999;
   text-decoration: line-through;
 }
 
 .catalog-item .price {
   position: relative;
-  width: 120px;
-  margin: 10px auto 20px;
-  padding: 10px 20px;
+  width: 140px;
+  margin: 0px 40px 20px 40px;
+  padding: 10px 24px;
   color: white;
   background: #ee3643;
   border-radius: 3px;
@@ -2057,7 +2057,7 @@ HEADER
 }
 
 .few-words {
-  padding-top: 60px;
+  padding-top: 65px;
   padding-bottom: 70px;
   background-color: #f4f8fa;
 }
@@ -2067,11 +2067,9 @@ HEADER
 }
 
 .few-words h2 {
-  margin: 0 0 30px;
-  font-size: 30px;
-  font-family: "Cuprum", sans-serif;
+  margin: 0 0 27px;
+  font: 30px/30px "Cuprum", "Arial", sans-serif;
   text-transform: uppercase;
-  letter-spacing: -1px;
 }
 
 .few-words p {
