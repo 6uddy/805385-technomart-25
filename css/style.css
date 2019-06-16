@@ -238,10 +238,11 @@ HEADER
   font-style: italic;
   text-align: left;
   font-weight: normal;
-  margin: 0 40px 0 0;
+  margin: 0 60px 0 0;
 }
 
 .contacts-header {
+  width: 350px;
   padding-left: 10px;
 }
 
@@ -354,7 +355,7 @@ HEADER
 
 .user-logged {
   position: relative;
-  width: 300px;
+  width: 280px;
   padding-left: 47px;
 }
 
@@ -684,14 +685,17 @@ HEADER
 
 .offers-first-slide {
   display: none;
-  min-height: 266px;
   background-image: url("../img/offer-slide-1.jpg");
+  height: 100%;
+  background-size: cover;
 }
 
 .offers-second-slide {
   display: none;
   min-height: 266px;
   background-image: url("../img/offer-slide-2.jpg");
+  height: 100%;
+  background-size: cover;
 }
 
 #slider-btn-1:checked ~ .offers-first-slide,
@@ -1325,7 +1329,8 @@ HEADER
   margin-bottom: 30px;
 }
 
-.contacts img {
+.map-image-link {
+  display: block;
   margin-bottom: 35px;
 }
 
