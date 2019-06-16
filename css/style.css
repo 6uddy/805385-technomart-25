@@ -1334,7 +1334,7 @@ HEADER
   margin-bottom: 35px;
 }
 
-.contacts-button {
+.write-us-button {
   width: 100%;
   padding: 10px 1px;
 }
@@ -2347,6 +2347,10 @@ HEADER
   outline: none;
 }
 
+.write-us-list textarea:focus {
+  outline: none;
+}
+
 .write-us-item label {
   display: block;
   margin-bottom: 9px;
@@ -2500,15 +2504,15 @@ HEADER
   }
 
   70% {
-    transform: translate(-50%, 30px);
+    transform: translate(-50%, -45%);
   }
 
   90% {
-    transform: translate(-50%, -10px);
+    transform: translate(-50%, -52%);
   }
 
   100% {
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -2519,7 +2523,7 @@ HEADER
 @keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    transform: translate(-50%, -50%);
   }
 
   10%,
@@ -2527,13 +2531,13 @@ HEADER
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    transform: translate(-50%,-51%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    transform: translate(-50%, -49%);
   }
 }
