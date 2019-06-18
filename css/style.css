@@ -1,7 +1,3 @@
-/*
-COMMON
-*/
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -37,10 +33,6 @@ body {
 a {
   text-decoration: none;
 }
-
-/*
-HEADER
-*/
 
 .main-header {
   font-family: "Cuprum", sans-serif;
@@ -545,8 +537,6 @@ background-image: url("../img/icon-logout-blue.svg");
   border-bottom: 5px #1d2739;
 }
 
-/*MAIN*/
-
 .offers {
   padding-top: 60px;
   margin-bottom: 50px;
@@ -610,8 +600,8 @@ background-image: url("../img/icon-logout-blue.svg");
 .offers-new:before {
   content: "";
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
   width: 60px;
   height: 60px;
   text-indent: -1000px;
@@ -703,14 +693,6 @@ background-image: url("../img/icon-logout-blue.svg");
 #slider-btn-1:checked ~ .slider-controls label[for="slider-btn-1"],
 #slider-btn-2:checked ~ .slider-controls label[for="slider-btn-2"] {
   background-color: #ff5357;
-}
-
-#slider-btn-1:checked ~ .slider-inner .slider-slides {
-  transform: translate(0);
-}
-
-#slider-btn-2:checked ~ .slider-inner .slider-slides {
-  transform: translate(-620px);
 }
 
 .offer-slider {
@@ -816,8 +798,6 @@ background-image: url("../img/icon-logout-blue.svg");
   top: 205px;
   left: 25px;
 }
-
-/*SECTIONS*/
 
 .section-header .btn {
   width: 250px;
@@ -1080,10 +1060,6 @@ background-image: url("../img/icon-logout-blue.svg");
   text-transform: uppercase;
 }
 
-.manufactures {
-  display: flex;
-}
-
 .manufacturers-list {
   display: flex;
   flex-wrap: wrap;
@@ -1121,8 +1097,6 @@ background-image: url("../img/icon-logout-blue.svg");
 .manufacturer-item:active {
   opacity: 0.5;
 }
-
-/*SERVICES*/
 
 .services {
   margin-bottom: 68px;
@@ -1223,10 +1197,7 @@ background-image: url("../img/icon-logout-blue.svg");
 }
 
 .service-description h3 {
-  margin-top: 10px;
-  margin-right: 0;
-  margin-left: 25px;
-  margin-bottom: 0px;
+  margin: 10px 0 0 25px;
   font-size: 36px;
   font-family: "Cuprum", sans-serif;
   text-transform: uppercase;
@@ -1360,11 +1331,6 @@ background-image: url("../img/icon-logout-blue.svg");
   padding: 10px 40px;
 }
 
-.button-map {
-  margin: 0;
-  padding: 0;
-}
-
 .contacts p {
   margin-bottom: 30px;
 }
@@ -1378,8 +1344,6 @@ background-image: url("../img/icon-logout-blue.svg");
   width: 100%;
   padding: 10px 1px;
 }
-
-/* CATALOG */
 
 .catalog-navigation {
   display: flex;
@@ -1420,15 +1384,9 @@ background-image: url("../img/icon-logout-blue.svg");
   text-transform: uppercase;
 }
 
-.breadcrumbs-current::after {
-  display: none;
-}
-
 .current-catalog::after {
   display: none;
 }
-
-/*FILTERS*/
 
 .filters {
   width: 220px;
@@ -1564,8 +1522,6 @@ background-image: url("../img/icon-logout-blue.svg");
   letter-spacing: -1px;
 }
 
-/*FILTER*/
-
 .filter-form fieldset {
   padding: 0;
   border: 0;
@@ -1628,9 +1584,6 @@ background-image: url("../img/icon-logout-blue.svg");
   letter-spacing: 1px;
 }
 
-/*.manufacture-checkbox input[type="checkbox"] {*/
-/*  display: none;*/
-/*}*/
 
 .manufacture-checkbox input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
@@ -1682,10 +1635,6 @@ background-image: url("../img/icon-logout-blue.svg");
   letter-spacing: 1px;
 }
 
-/*.power-supply-radio input[type="radio"] {*/
-/*  display: none;*/
-/*}*/
-
 .power-supply-radio input[type="radio"] + .radio-indicator {
   position: absolute;
   top: -4px;
@@ -1712,10 +1661,6 @@ background-image: url("../img/icon-logout-blue.svg");
 .power-supply-radio input[type="radio"]:hover:checked + .radio-indicator,
 .power-supply-radio input[type="radio"]:focus:checked + .radio-indicator {
   background: url("../img/radio-on-hover.svg") no-repeat;
-}
-
-.sort-menu {
-  display: flex;
 }
 
 .catalog {
@@ -2028,7 +1973,7 @@ background-image: url("../img/icon-logout-blue.svg");
 .catalog-item .price {
   position: relative;
   width: 140px;
-  margin: 0px 40px 20px 40px;
+  margin: 0 40px 20px 40px;
   padding: 10px 24px;
   color: white;
   background: #ee3643;
@@ -2045,8 +1990,6 @@ background-image: url("../img/icon-logout-blue.svg");
   border: 20px solid white;
   border-left-color: #ee3643;
 }
-
-/*PAGINATION*/
 
 .pagination-list {
   display: flex;
@@ -2092,10 +2035,8 @@ background-image: url("../img/icon-logout-blue.svg");
 
 .pagination-list .next {
   margin-left: -10px;
-  padding: 0 30px;
+  padding: 5px 30px;
 }
-
-/*ABOUT*/
 
 .few-words-wrapper {
   display: flex;
@@ -2120,8 +2061,6 @@ background-image: url("../img/icon-logout-blue.svg");
 .few-words p {
   margin: 0;
 }
-
-/*FOOTER*/
 
 .footer-nav {
   background-color: #32425c;
@@ -2500,10 +2439,6 @@ background-image: url("../img/icon-logout-blue.svg");
   background-color: #f4f4f4;
 }
 
-.modal-basket-bottom .button {
-  flex-basis: 140px;
-}
-
 .modal-basket-bottom a:last-child {
   color: #000000;
   background-color: #ffffff;
@@ -2536,7 +2471,6 @@ background-image: url("../img/icon-logout-blue.svg");
   animation: bounce 0.6s;
 }
 
-/* Анимация всплывающих окон */
 @keyframes bounce {
   0% {
     transform: translate(-50%, -2000px);
