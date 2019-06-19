@@ -539,7 +539,7 @@ background-image: url("../img/icon-logout-blue.svg");
 
 .offers {
   padding-top: 60px;
-  margin-bottom: 50px;
+  margin-bottom: 52px;
 }
 
 .offers .offer-materials {
@@ -737,7 +737,7 @@ background-image: url("../img/icon-logout-blue.svg");
   color: #ffffff;
   margin-left: 24px;
   margin-bottom: 13px;
-  margin-top: 22px;
+  margin-top: 20px;
 }
 
 .offers a {
@@ -1102,7 +1102,7 @@ background-image: url("../img/icon-logout-blue.svg");
 .information {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 88px;
+  margin-bottom: 87px;
 }
 
 .first-column {
