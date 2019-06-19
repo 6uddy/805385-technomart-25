@@ -346,23 +346,19 @@ a {
   padding-left: 47px;
 }
 
-.user-login::after {
-  content: "";
+.user-menu-link svg {
   position: absolute;
-  top: 13px;
-  left: 12px;
-  width: 20px;
-  height: 18px;
-  background: url("../img/icon-login.svg") no-repeat 0 0;
-  transition: 200ms all;
+  top: 14px;
+  left: 14px;
 }
 
-.user-login:hover::after {
-  background-image: url("../img/icon-login-blue.svg");
+.user-menu-link:hover path,
+.user-menu-link:focus path {
+  fill: #32425c;
 }
 
-.user-login:active::after {
-  background-image: url("../img/icon-login.svg");
+.user-menu-link:active path {
+  fill: #c5c5c5;
 }
 
 .user-register {
@@ -375,21 +371,6 @@ a {
   padding-left: 47px;
 }
 
-.user-logged::before {
-  content: "";
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  width: 20px;
-  height: 18px;
-  background: url("../img/icon-user.svg") no-repeat 0 0;
-  transition: 200ms all;
-}
-
-.user-logged:hover::before,
-.user-logged:focus::before {
-  background-image: url("../img/icon-user-blue.svg");
-}
 
 .user-controls-catalog-list {
   display: flex;
@@ -405,31 +386,12 @@ a {
   display: flex;
 }
 
-
 .user-logout {
   display: block;
-  padding: 20px;
+  position: relative;
+  padding: 22px;
   width: 30px;
   height: 100%;
-  transition: 200ms all;
-  background: url("../img/icon-logout.svg") no-repeat center;
-}
-
-.user-logout:hover,
-.user-logout:focus {
-background-image: url("../img/icon-logout-blue.svg");
-}
-
-.user-logout:active {
-  opacity: 0.3;
-}
-
-.user-logged:active {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.user-logged:active::before {
-  opacity: 0.3;
 }
 
 .user-login:hover,
