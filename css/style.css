@@ -707,7 +707,7 @@ background-image: url("../img/icon-logout-blue.svg");
 
 .offers-first-slide {
   display: none;
-  background-image: url("../img/offer-slide-1.jpg");
+  background-image: url("../img/offer-slide-2.jpg");
   height: 100%;
   background-size: cover;
 }
@@ -715,7 +715,7 @@ background-image: url("../img/icon-logout-blue.svg");
 .offers-second-slide {
   display: none;
   min-height: 266px;
-  background-image: url("../img/offer-slide-2.jpg");
+  background-image: url("../img/offer-slide-1.jpg");
   height: 100%;
   background-size: cover;
 }
