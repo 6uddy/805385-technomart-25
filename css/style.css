@@ -1623,7 +1623,7 @@ a {
   background: url("../img/new-flag.png") no-repeat 0 0;
 }
 
-.product-item .actions {
+.actions {
   position: absolute;
   top: 0;
   left: 0;
@@ -1637,8 +1637,8 @@ a {
   background-color: white;
 }
 
-.product-item .actions .buy,
-.product-item .actions .bookmark {
+.actions .buy,
+.actions .bookmark {
   display: block;
   width: 130px;
   margin: 0 auto 12px;
@@ -1658,20 +1658,20 @@ a {
   text-transform: uppercase;
 }
 
-.product-item .actions .buy:hover,
-.product-item .actions .buy:focus {
+.actions .buy:hover,
+.actions .buy:focus {
   background-color: #5fbb2d;
 }
 
-.product-item .actions .buy:active {
+.actions .buy:active {
   background-color: #518534;
 }
 
-.product-item .actions .buy {
+.actions .buy {
   position: relative;
 }
 
-.product-item .actions .buy::before {
+.actions .buy::before {
   position: absolute;
   content: "";
   width: 15px;
@@ -1683,23 +1683,23 @@ a {
   opacity: 0.3;
 }
 
-.product-item .actions .buy:hover::before {
+.actions .buy:hover::before {
   opacity: 1;
 }
 
-.product-item .actions .bookmark {
+.actions .bookmark {
   margin-bottom: 50px;
   padding-bottom: 4px;
   color: #33445a;
   border: 2px solid #63a63e;
 }
 
-.product-item .actions .bookmark:hover,
-.product-item .actions .bookmark:focus {
+.actions .bookmark:hover,
+.actions .bookmark:focus {
   border-color: #33445a;
 }
 
-.product-item .actions .bookmark:active {
+.actions .bookmark:active {
   opacity: 0.3;
 }
 
@@ -1708,13 +1708,13 @@ a {
   box-shadow: 0 10px 30px -10px #000000;
 }
 
-.product-item .actions .bookmark {
+.actions .bookmark {
   color: #32425c;
   background: white;
   border-bottom-color: #63a63e;
 }
 
-.product-item .actions {
+.actions {
   display: none;
 }
 
@@ -1722,7 +1722,7 @@ a {
   display: block;
 }
 
-.product-item .actions {
+.actions {
   display: none;
 }
 
@@ -1885,7 +1885,7 @@ a {
   color: #f4f8fa;
 }
 
-.footer-menu li:not(:last-child) a {
+.footer-menu .footer-menu-link:not(:last-child) {
   margin-right: 60px;
 }
 
@@ -1947,7 +1947,7 @@ a {
   opacity: 0.5;
 }
 
-.footer-section-menu li:not(:last-child) a {
+.footer-section-menu .footer-section-link:not(:last-child) {
   margin-right: 60px;
 }
 
