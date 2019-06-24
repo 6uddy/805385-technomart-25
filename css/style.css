@@ -1881,10 +1881,6 @@ a {
   color: #f4f8fa;
 }
 
-.footer-menu .footer-menu-link:not(:last-child) {
-  margin-right: 60px;
-}
-
 .footer-menu a:hover,
 .footer-menu a:focus {
   border-bottom: 1px solid #f4f8fa;
@@ -1894,7 +1890,7 @@ a {
   opacity: 0.5;
 }
 
-.footer-menu li:not(:last-child) a {
+.footer-menu-link:not(:last-child) a {
   margin-right: 60px;
 }
 
@@ -1943,7 +1939,7 @@ a {
   opacity: 0.5;
 }
 
-.footer-section-menu .footer-section-link:not(:last-child) {
+.footer-section-link:not(:last-of-type) a {
   margin-right: 60px;
 }
 
