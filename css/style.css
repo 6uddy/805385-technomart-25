@@ -51,10 +51,6 @@ a {
   padding: 14px 55px 7px;
 }
 
-.main-header-logo img {
-  width: 110px;
-}
-
 .main-header-logo::after {
   content: "";
   position: absolute;
