@@ -96,6 +96,7 @@ a {
 
 .header-search input::placeholder {
   color: #ffffff;
+  opacity: 1;
 }
 
 .header-search svg {
@@ -148,7 +149,7 @@ a {
   left: 17px;
   width: 14px;
   height: 16px;
-  background: url(../img/icon-bookmark.svg) no-repeat 0 0;
+  background: url("../img/icon-bookmark.svg") no-repeat 0 0;
   opacity: 0.3;
   transition: 200ms all;
   transform: translateY(-50%);
@@ -501,35 +502,25 @@ a {
 }
 
 .offers .offer-materials {
-  background-color: #ffbf47;
-  background-image: url("../img/icon-1.svg");
-  background-position: top 31px right 43px
+  background: #ffbf47 url("../img/icon-1.svg") top 31px right 43px;
 }
 
 .offers .offer-tools {
-  background-color: #3bbce3;
-  background-image: url("../img/icon-2.svg");
-  background-position: top 33px right 28px;
+  background: #3bbce3 url("../img/icon-2.svg") top 33px right 28px;
 }
 
 .offers .offer-equipment {
-  background-color: #dc91d8;
-  background-image: url("../img/icon-3.svg");
-  background-position: top 31px right 31px;
+  background: #dc91d8 url("../img/icon-3.svg") top 31px right 31px;
 }
 
 .offers .offer-discount {
   margin-right: 0;
-  background-color: #8ed78f;
-  background-image: url("../img/icon-4.svg");
-  background-position: top 26px right 45px;
+  background: #8ed78f url("../img/icon-4.svg") top 26px right 45px;
 }
 
 .offers .offer-delivery {
   margin-right: 0;
-  background-color: #ffc047;
-  background-image: url("../img/icon-5.svg");
-  background-position: top 32px right 31px;
+  background: #ffc047 url("../img/icon-5.svg") top 32px right 31px;
 }
 
 .offers-content {
@@ -638,6 +629,7 @@ a {
 
 .slider-controls label {
   display: inline-block;
+  vertical-align: center;
   width: 11px;
   height: 11px;
   margin: 0 3px;
@@ -763,9 +755,9 @@ a {
 
 .btn {
   display: inline-block;
-  padding: 10px 50px;
-  font: 14px/18px "Cuprum", "Arial", sans-serif;
   vertical-align: middle;
+  padding: 10px 48px;
+  font: 14px/18px "Cuprum", "Arial", sans-serif;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
@@ -1175,11 +1167,12 @@ a {
 }
 
 .filter-list label {
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 19px;
   color: #000000;
   text-align: left;
   text-transform: uppercase;
+  letter-spacing: 0;
 }
 
 .catalog-main-section-wrapper {
@@ -1189,11 +1182,23 @@ a {
 
 .filter-form {
   margin-top: 13px;
+
+}.range-filter {
+   position: relative;
+ }
+
+.range-filter::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #e5e5e5;
+  bottom: 10px;
 }
 
 .filters-header {
   display: flex;
-  align-items: center;
+  padding-top: 8px;
   min-height: 37px;
   background-color: #f7f3ec;
 }
@@ -1326,17 +1331,12 @@ a {
   margin: 0 0 12px;
 }
 
-.manufacture-filter::before,
 .manufacture-filter::after {
   content: "";
   position: absolute;
   width: 100%;
   height: 1px;
   background-color: #e5e5e5;
-}
-
-.manufacture-filter::before {
-  top: -18px;
 }
 
 .manufacture-filter::after {
@@ -1656,11 +1656,15 @@ a {
 
 .actions .buy:hover,
 .actions .buy:focus {
+  border: 3px solid #5fbb2d;
+  border-bottom-color: #367315;
   background-color: #5fbb2d;
 }
 
 .actions .buy:active {
   background-color: #518534;
+  border: 3px solid #518534;
+  border-bottom-color: #367315;
 }
 
 .actions .buy {
@@ -1994,6 +1998,7 @@ a {
 
 .footer-feedback {
   display: inline-block;
+  vertical-align: center;
   width: 100px;
 }
 
@@ -2038,7 +2043,7 @@ a {
 
 .modal-close {
   position: absolute;
-  top: 0;
+  top: 2px;
   right: 0;
   width: 39px;
   height: 39px;
