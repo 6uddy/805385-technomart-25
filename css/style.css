@@ -1183,9 +1183,11 @@ a {
 .filter-form {
   margin-top: 13px;
 
-}.range-filter {
-   position: relative;
- }
+}
+
+.range-filter {
+  position: relative;
+}
 
 .range-filter::before {
   content: "";
@@ -1547,6 +1549,16 @@ a {
 
 .order-buttons .sort-icon {
   fill: rgba(0, 0, 0, 0.3);
+}
+
+.order-buttons a:hover .sort-icon,
+.order-buttons a:focus .sort-icon {
+  fill: rgba(0, 0, 0, 1);
+}
+
+.order-buttons a:active .sort-icon {
+  color: #ee3643;
+  fill: #ee3643;
 }
 
 .order-buttons .active {
