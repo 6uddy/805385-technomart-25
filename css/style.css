@@ -36,10 +36,6 @@ a {
   text-decoration: none;
 }
 
-input::-ms-clear {
-  display: none;
-}
-
 .main-header {
   font-family: "Cuprum", sans-serif;
   background-color: #f3f7f9;
@@ -89,7 +85,7 @@ input::-ms-clear {
   min-height: 42px;
   padding-left: 50px;
   color: inherit;
-  background-color: #33445a;
+  background: #33445a;
   border: none;
   transition: 200ms all;
 }
@@ -155,9 +151,7 @@ input::-ms-clear {
   left: 17px;
   width: 14px;
   height: 16px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-image: url("../img/icon-bookmark.svg");
+  background: url("../img/icon-bookmark.svg") no-repeat 0 0;
   opacity: 0.3;
   transition: 200ms all;
   transform: translateY(-50%);
@@ -189,9 +183,7 @@ input::-ms-clear {
   left: 10px;
   width: 15px;
   height: 15px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-image: url("../img/icon-cart.svg");
+  background: url("../img/icon-cart.svg") no-repeat 0 0;
   opacity: 0.3;
   transition: 200ms all;
   transform: translateY(-50%);
@@ -274,9 +266,7 @@ input::-ms-clear {
   left: 10px;
   width: 20px;
   height: 20px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-image: url("../img/icon-phone.svg");
+  background: url("../img/icon-phone.svg") no-repeat 0 0;
   opacity: 0.3;
   transition: 200ms all;
 }
@@ -514,35 +504,25 @@ input::-ms-clear {
 }
 
 .offers .offer-materials {
-  background-position: top 31px right 43px;
-  background-image: url("../img/icon-1.svg");
-  background-color: #ffbf47;
+  background: #ffbf47 url("../img/icon-1.svg") top 31px right 43px;
 }
 
 .offers .offer-tools {
-  background-position: top 33px right 28px;
-  background-image: url("../img/icon-2.svg");
-  background-color: #3bbce3;
+  background: #3bbce3 url("../img/icon-2.svg") top 33px right 28px;
 }
 
 .offers .offer-equipment {
-  background-position: top 31px right;
-  background-image: url("../img/icon-3.svg");
-  background-color: #dc91d8;
+  background: #dc91d8 url("../img/icon-3.svg") top 31px right 31px;
 }
 
 .offers .offer-discount {
   margin-right: 0;
-  background-position: top 26px right 45px;
-  background-image: url("../img/icon-4.svg");
-  background-color: #8ed78f;
+  background: #8ed78f url("../img/icon-4.svg") top 26px right 45px;
 }
 
 .offers .offer-delivery {
   margin-right: 0;
-  background-position: top 32px right 31px;
-  background-image: url("../img/icon-5.svg");
-  background-color: #ffc047;
+  background: #ffc047 url("../img/icon-5.svg") top 32px right 31px;
 }
 
 .offers-content {
@@ -578,9 +558,7 @@ input::-ms-clear {
   text-indent: -1000px;
   overflow: hidden;
   z-index: 10;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-image: url("../img/new-flag.png");
+  background: url("../img/new-flag.png") no-repeat 0 0;
 }
 
 .offers-first-row .offer-item {
@@ -629,8 +607,7 @@ input::-ms-clear {
   left: 25px;
   width: 22px;
   height: 40px;
-  background-image: url("../img/icon-left.svg");
-  background-color: transparent;
+  background: transparent url("../img/icon-left.svg");
   border: none;
   cursor: pointer;
 }
@@ -639,8 +616,7 @@ input::-ms-clear {
   right: 19px;
   width: 22px;
   height: 40px;
-  background-image: url("../img/icon-right.svg");
-  background-color: transparent;
+  background: transparent url("../img/icon-right.svg");
   border: none;
   cursor: pointer;
 }
@@ -789,7 +765,7 @@ input::-ms-clear {
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
-  background-color: #ff5357;
+  background: #ff5357;
   border: none;
   border-radius: 2px;
   transition: 150ms all;
@@ -955,9 +931,7 @@ input::-ms-clear {
   height: 279px;
   top: -35px;
   left: 230px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-image: url("../img/line.png");
+  background: url("../img/line.png") no-repeat 0 0;
   opacity: 0.25;
 }
 
@@ -1024,8 +998,7 @@ input::-ms-clear {
   z-index: 0;
   width: 468px;
   height: 261px;
-  background-repeat: no-repeat;
-  background-image: url("../img/icon-delivery.png");
+  background: url("../img/icon-delivery.png") no-repeat;
 }
 
 .service-description .warranty::before {
@@ -1036,8 +1009,7 @@ input::-ms-clear {
   z-index: 0;
   width: 389px;
   height: 283px;
-  background-repeat: no-repeat;
-  background-image: url("../img/icon-warranty.png");
+  background: url("../img/icon-warranty.png") no-repeat;
 }
 
 .service-description .credit::before {
@@ -1048,8 +1020,7 @@ input::-ms-clear {
   z-index: 0;
   width: 465px;
   height: 265px;
-  background-repeat: no-repeat;
-  background-image: url("../img/icon-credit.png");
+  background: url("../img/icon-credit.png") no-repeat;
 }
 
 .left-part .credit .btn {
@@ -1409,8 +1380,7 @@ input::-ms-clear {
   left: 0;
   width: 23px;
   height: 23px;
-  background-repeat: no-repeat;
-  background-image: url("../img/checkbox-off.svg");
+  background: url("../img/checkbox-off.svg") no-repeat;
 }
 
 .manufacture-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
@@ -1419,20 +1389,17 @@ input::-ms-clear {
   left: 0;
   width: 26px;
   height: 26px;
-  background-repeat: no-repeat;
-  background-image: url("../img/checkbox-on.svg");
+  background: url("../img/checkbox-on.svg") no-repeat;
 }
 
 .manufacture-checkbox input[type="checkbox"]:hover:not(:checked) + .checkbox-indicator,
 .manufacture-checkbox input[type="checkbox"]:focus:not(:checked) + .checkbox-indicator {
-  background-repeat: no-repeat;
-  background-image: url("../img/checkbox-off-hover.svg");
+  background: url("../img/checkbox-off-hover.svg") no-repeat;
 }
 
 .manufacture-checkbox input[type="checkbox"]:hover:checked + .checkbox-indicator,
 .manufacture-checkbox input[type="checkbox"]:focus:checked + .checkbox-indicator {
-  background-repeat: no-repeat;
-  background-image: url("../img/checkbox-on-hover.svg");
+  background: url("../img/checkbox-on-hover.svg") no-repeat;
 }
 
 .power-supply-filter {
@@ -1463,8 +1430,7 @@ input::-ms-clear {
   left: 0;
   width: 25px;
   height: 25px;
-  background-repeat: no-repeat;
-  background-image: url("../img/radio-off.svg");
+  background: url("../img/radio-off.svg") no-repeat;
 }
 
 .power-supply-radio input[type="radio"]:checked + .radio-indicator {
@@ -1473,20 +1439,17 @@ input::-ms-clear {
   left: 0;
   width: 26px;
   height: 26px;
-  background-repeat: no-repeat;
-  background-image: url("../img/radio-on.svg");
+  background: url("../img/radio-on.svg") no-repeat;
 }
 
 .power-supply-radio input[type="radio"]:hover:not(:checked) + .radio-indicator,
 .power-supply-radio input[type="radio"]:focus:not(:checked) + .radio-indicator {
-  background-repeat: no-repeat;
-  background-image: url("../img/radio-off-hover.svg");
+  background: url("../img/radio-off-hover.svg") no-repeat;
 }
 
 .power-supply-radio input[type="radio"]:hover:checked + .radio-indicator,
 .power-supply-radio input[type="radio"]:focus:checked + .radio-indicator {
-  background-repeat: no-repeat;
-  background-image: url("../img/radio-on-hover.svg");
+  background: url("../img/radio-on-hover.svg") no-repeat;
 }
 
 .catalog {
@@ -1675,9 +1638,7 @@ input::-ms-clear {
   text-indent: -1000px;
   overflow: hidden;
   z-index: 3;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-image: url("../img/new-flag.png");
+  background: url("../img/new-flag.png") no-repeat 0 0;
 }
 
 .actions {
@@ -1737,9 +1698,7 @@ input::-ms-clear {
   content: "";
   width: 15px;
   height: 15px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-image: url("../img/icon-cart.svg");
+  background: url("../img/icon-cart.svg") no-repeat 0 0;
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
@@ -1773,7 +1732,7 @@ input::-ms-clear {
 
 .actions .bookmark {
   color: #32425c;
-  background-color: white;
+  background: white;
   border-bottom-color: #63a63e;
 }
 
@@ -1820,7 +1779,7 @@ input::-ms-clear {
   margin: auto 40px 20px;
   padding: 10px 24px;
   color: white;
-  background-color: #ee3643;
+  background: #ee3643;
   border-radius: 3px;
 }
 
@@ -2126,7 +2085,7 @@ input::-ms-clear {
   left: 6px;
   width: 27px;
   height: 4px;
-  background-color: #ff5357;
+  background: #ff5357;
 }
 
 .modal-close::before {
@@ -2273,9 +2232,7 @@ input::-ms-clear {
   left: -99px;
   width: 66px;
   height: 66px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-image: url("../img/icon-mark.svg");
+  background: url("../img/icon-mark.svg") 0 0 no-repeat;
 }
 
 .modal-basket-bottom {
