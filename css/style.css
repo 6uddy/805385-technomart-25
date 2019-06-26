@@ -26,7 +26,9 @@ body {
   margin: 0;
   padding: 0;
   min-width: 960px;
-  font: 13px/24px "PT Sans", "Arial", sans-serif;
+  line-height: 24px;
+  font-size: 13px;
+  font-family: "PT Sans", "Arial", sans-serif;
   background-color: #ffffff;
 }
 
@@ -702,7 +704,7 @@ a {
   width: 135px;
   margin-bottom: 22px;
   margin-left: 25px;
-  padding: 10px 1px 10px 1px;
+  padding: 10px 1px;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
@@ -757,7 +759,9 @@ a {
   display: inline-block;
   vertical-align: middle;
   padding: 10px 49px;
-  font: 14px/18px "Cuprum", "Arial", sans-serif;
+  line-height: 18px;
+  font-size: 14px;
+  font-family: "Cuprum", "Arial", sans-serif;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
@@ -778,7 +782,9 @@ a {
 .section-header .section-title {
   margin: 0;
   padding: 5px;
-  font: 30px/30px "Cuprum", "Arial", sans-serif;
+  line-height: 30px;
+  font-size: 30px;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #32425c;
   text-transform: uppercase;
 }
@@ -892,14 +898,18 @@ a {
 
 .services-title {
   margin: 0 0 27px;
-  font: 30px/30px "Cuprum", "Arial", sans-serif;
+  line-height: 30px;
+  font-size: 30px;
+  font-family: "Cuprum", "Arial", sans-serif;
   text-transform: uppercase;
   color: black;
 }
 
 .services-info {
   margin: 0 0 64px;
-  font: 13px/24px "PT Sans", "Arial", sans-serif;
+  line-height: 24px;
+  font-size: 13px;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
 }
 
@@ -1847,7 +1857,9 @@ a {
 
 .few-words h2 {
   margin: 0 0 27px;
-  font: 30px/30px "Cuprum", "Arial", sans-serif;
+  line-height: 30px;
+  font-size: 30px;
+  font-family: "Cuprum", "Arial", sans-serif;
   text-transform: uppercase;
 }
 
@@ -2123,7 +2135,9 @@ a {
 .write-us-item label {
   display: block;
   margin-bottom: 9px;
-  font: 18px/18px "Cuprum", "Arial", sans-serif;
+  line-height: 18px;
+  font-size: 18px;
+  font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .write-us-item input,
