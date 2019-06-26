@@ -526,7 +526,7 @@ input::-ms-clear {
 }
 
 .offers .offer-equipment {
-  background-position: top 31px right;
+  background-position: top 31px right 31px;
   background-image: url("../img/icon-3.svg");
   background-color: #dc91d8;
 }
@@ -764,7 +764,9 @@ input::-ms-clear {
   position: absolute;
   top: 60px;
   left: 25px;
-  font: 18px/24px "Cuprum", "Arial", sans-serif;
+  line-height: 24px;
+  font-size: 18px;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
 }
 
@@ -807,7 +809,7 @@ input::-ms-clear {
   margin: 0;
   padding: 5px;
   line-height: 30px;
-  font-size: 30px;
+  font-size: 28px;
   font-family: "Cuprum", "Arial", sans-serif;
   color: #32425c;
   text-transform: uppercase;
@@ -923,7 +925,7 @@ input::-ms-clear {
 .services-title {
   margin: 0 0 27px;
   line-height: 30px;
-  font-size: 30px;
+  font-size: 28px;
   font-family: "Cuprum", "Arial", sans-serif;
   text-transform: uppercase;
   color: black;
@@ -1899,7 +1901,7 @@ input::-ms-clear {
 .few-words h2 {
   margin: 0 0 27px;
   line-height: 30px;
-  font-size: 30px;
+  font-size: 29px;
   font-family: "Cuprum", "Arial", sans-serif;
   text-transform: uppercase;
 }
